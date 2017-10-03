@@ -9,8 +9,12 @@
 .footer {
 	padding-top: $pad-m;
 	color: #fff;
+	flex-wrap: nowrap;
 	@include res(l) {
 		padding-top: $pad-s;
+	}
+	@include res(m){
+		flex-wrap: wrap;
 	}
 	@include res(s) {
 		padding-top: $pad-xs;
@@ -144,11 +148,16 @@
 .footer-bottom {
 	padding-top: $pad-l;
 	color: #fff;
+	line-height: 1.4;
 	@include res(l) {
 		padding-top: $pad-m;
 	}
 	p, a {
+		display: inline-block;
 		font-size: 12px;
+		@include res(xs){
+			margin-bottom: 10px;
+		}
 	}
 	a {
 		transition: all 0.3s ease;

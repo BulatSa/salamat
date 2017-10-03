@@ -57,7 +57,7 @@
 					<li><a href="#">Диагностика стопы</a></li>
 				</ul>
 			</div>
-			<div class="grid-2 grid-6_m grid-12_xs">
+			<div class="grid-2 grid-6_m grid-12_xs no-shrink">
 				<p class="footer__title">Адреса салонов</p>
 				<p class="footer__descr">Бесплатный звонок по РФ</p>
 				<a href="tel:88000000000" class="footer__phone">8 800 000-00-00</a>

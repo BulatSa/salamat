@@ -71,6 +71,11 @@
 	flex-wrap: wrap;
 }
 
+.no-shrink{
+	width: auto;
+	flex-shrink: 0;
+}
+
 .def-sec {
 	padding-top: $pad-l;
 	padding-bottom: $pad-l;
