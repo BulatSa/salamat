@@ -9,26 +9,6 @@
 }
 
 @font-face {
-	font-family: 'Ubuntu';
-	src: url('../fonts/hinted-subset-Ubuntu-Bold.eot');
-	src: url('../fonts/hinted-subset-Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/hinted-subset-Ubuntu-Bold.woff') format('woff'),
-	url('../fonts/hinted-subset-Ubuntu-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Ubuntu';
-	src: url('../fonts/hinted-subset-Ubuntu.eot');
-	src: url('../fonts/hinted-subset-Ubuntu.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/hinted-subset-Ubuntu.woff') format('woff'),
-	url('../fonts/hinted-subset-Ubuntu.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
 	font-family: 'PF BeauSans Pro';
 	src: url('../fonts/hinted-subset-PFBeauSansPro-Regular.eot');
 	src: url('../fonts/hinted-subset-PFBeauSansPro-Regular.eot?#iefix') format('embedded-opentype'),
@@ -45,15 +25,5 @@
 	url('../fonts/hinted-subset-PFBeauSansPro-SemiBold.woff') format('woff'),
 	url('../fonts/hinted-subset-PFBeauSansPro-SemiBold.ttf') format('truetype');
 	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Ubuntu';
-	src: url('../fonts/hinted-subset-Ubuntu-Light.eot');
-	src: url('../fonts/hinted-subset-Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/hinted-subset-Ubuntu-Light.woff') format('woff'),
-	url('../fonts/hinted-subset-Ubuntu-Light.ttf') format('truetype');
-	font-weight: 300;
 	font-style: normal;
 }

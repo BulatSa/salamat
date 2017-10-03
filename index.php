@@ -86,7 +86,7 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="price">150 390 р</span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -117,7 +117,7 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="price">150 390 р</span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -148,7 +148,7 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="price">150 390 р</span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -179,7 +179,7 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="price">150 390 р</span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -210,7 +210,7 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="price">150 390 р</span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -241,7 +241,7 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="price">150 390 р</span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -272,7 +272,7 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="price">150 390 р</span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -303,7 +303,7 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="price">150 390 р</span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -352,8 +352,8 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="old">250 390 р</span>
-							<span class="price">150 390 р</span>
+							<span class="old">55 390<span class="rub">руб.</span></span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -388,8 +388,8 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="old">250 390 р</span>
-							<span class="price">150 390 р</span>
+							<span class="old">55 390<span class="rub">руб.</span></span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -424,8 +424,8 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="old">250 390 р</span>
-							<span class="price">150 390 р</span>
+							<span class="old">55 390<span class="rub">руб.</span></span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -460,8 +460,8 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="old">250 390 р</span>
-							<span class="price">150 390 р</span>
+							<span class="old">55 390<span class="rub">руб.</span></span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -496,8 +496,8 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="old">250 390 р</span>
-							<span class="price">150 390 р</span>
+							<span class="old">55 390<span class="rub">руб.</span></span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -532,8 +532,8 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="old">250 390 р</span>
-							<span class="price">150 390 р</span>
+							<span class="old">55 390<span class="rub">руб.</span></span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -568,8 +568,8 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="old">250 390 р</span>
-							<span class="price">150 390 р</span>
+							<span class="old">55 390<span class="rub">руб.</span></span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
@@ -604,8 +604,8 @@
 					</a>
 					<div class="product-item__buy">
 						<div class="product-item__buy-price">
-							<span class="old">250 390 р</span>
-							<span class="price">150 390 р</span>
+							<span class="old">55 390<span class="rub">руб.</span></span>
+							<span class="price">50 390<span class="rub">руб.</span></span>
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>

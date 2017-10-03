@@ -21,6 +21,7 @@
 	<meta property="og:image" content="/img/og.jpg">
 	<!-- og -->
 
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 </head>
 

@@ -116,7 +116,7 @@ $('#offers-new').slick({
 			}
 		},
 		{
-			breakpoint: 600,
+			breakpoint: 780,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2
