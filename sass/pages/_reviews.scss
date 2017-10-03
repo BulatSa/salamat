@@ -1,0 +1,15 @@
+.review-text {
+	padding: 25px;
+	margin-bottom: $pad-m;
+	border-radius: 10px;
+	box-shadow: 0 9px 21px transparentize(#d2e5ec, 0.67);
+	background: #fff;
+	@include res(l) {
+		margin-bottom: $pad-s;
+		padding: 20px;
+	}
+	@include res(s) {
+		margin-bottom: $pad-xs;
+		padding: 12px;
+	}
+}

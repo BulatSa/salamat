@@ -1,0 +1,30 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/placeholders';
+
+@import 'vendors/fancybox';
+@import 'vendors/scrollbar';
+@import 'vendors/flickity';
+@import 'vendors/slick';
+
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/icons';
+@import 'base/typography';
+@import 'base/grid';
+
+@import 'modules/forms';
+@import 'modules/buttons';
+@import 'modules/modals';
+@import 'modules/footer';
+@import 'modules/header';
+@import 'modules/more-info';
+@import 'modules/big-banner';
+@import 'modules/offers';
+@import 'modules/product-item';
+@import 'modules/about-services';
+
+@import 'pages/home';
+@import 'pages/news';
+@import 'pages/reviews';
+@import 'pages/sales';

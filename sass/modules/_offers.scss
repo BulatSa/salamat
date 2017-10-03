@@ -1,0 +1,52 @@
+.offers-row-sec {
+	&--gray {
+		background: #eef3f5;
+	}
+}
+
+.offers-row {
+	& * {
+		outline: none;
+	}
+}
+
+.offers-row-title {
+	position: relative;
+	padding-right: 60px;
+	a {
+		display: inline-block;
+		transition: all 0.3s ease;
+		@include res(s) {
+			padding-bottom: 5px;
+		}
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+.offers-nav {
+	position: absolute;
+	bottom: 22px;
+	right: 0;
+	@include res(s) {
+		bottom: 5px;
+	}
+	i {
+		display: inline-block;
+		margin-left: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		&:hover {
+			color: $orange;
+		}
+		&.slick-disabled {
+			pointer-events: none;
+			opacity: 0.4;
+		}
+	}
+}

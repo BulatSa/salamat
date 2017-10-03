@@ -1,0 +1,29 @@
+$breakpoints: (
+	'xl': (max-width: 1400px),
+	'l': (max-width: 1024px),
+	'm': (max-width: 768px),
+	's': (max-width: 680px),
+	'xs': (max-width: 480px),
+);
+
+$font: 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
+$font-head: 'PF BeauSans Pro';
+
+
+$black: #353434;
+$orange: #ff7308;
+$green: #1dcbae;
+
+$container_width: 1452px;
+
+$gutter: 13px;
+$gutter-mobile: 10px;
+
+$pad-xl: 90px;
+$pad-l: 65px;
+$pad-m: 45px;
+$pad-s: 36px;
+$pad-xs: 20px;
+$pad-xxs: 12px;
+
+$light: 300;

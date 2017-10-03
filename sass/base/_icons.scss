@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'salamat';
+	src:
+		url('../fonts/salamat.ttf?e1grg6') format('truetype'),
+		url('../fonts/salamat.woff?e1grg6') format('woff'),
+		url('../fonts/salamat.svg?e1grg6#salamat') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'salamat' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.i-basket:before {
+	content: "\e900";
+}
+.i-fb:before {
+	content: "\e901";
+}
+.i-geo:before {
+	content: "\e902";
+}
+.i-insta:before {
+	content: "\e903";
+}
+.i-ok:before {
+	content: "\e904";
+}
+.i-percent:before {
+	content: "\e905";
+}
+.i-right:before {
+	content: "\e906";
+}
+.i-search:before {
+	content: "\e907";
+}
+.i-user:before {
+	content: "\e908";
+}
+.i-vk:before {
+	content: "\e909";
+}
+.i-youtube:before {
+	content: "\e90a";
+}
+.i-star:before {
+	content: "\e90b";
+}
+.i-nav-left:before {
+	content: "\e90c";
+}
+.i-nav-right:before {
+	content: "\e90d";
+}

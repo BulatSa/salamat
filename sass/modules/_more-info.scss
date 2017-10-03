@@ -1,0 +1,18 @@
+.more-info-sec {}
+
+.more-info {
+	a.h2 {
+		display: inline-block;
+		transition: all 0.3s ease;
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+.more-info__news {
+	padding-right: 5%;
+	@include res(s) {
+		padding-right: 0;
+	}
+}

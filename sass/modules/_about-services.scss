@@ -1,0 +1,71 @@
+.about-services-sec {}
+
+.about-services {}
+
+.about-services__benefits {}
+
+.about-services__benefit {
+	display: flex;
+	align-items: flex-start;
+	@include res(m) {
+		flex-wrap: wrap;
+		padding-bottom: $pad-xs;
+	}
+	&--cert {
+		img {
+			margin-top: 5px;
+			@include res(xl) {
+				margin-top: 8px;
+			}
+		}
+	}
+}
+
+.about-services__benefit-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 90px;
+	height: 90px;
+	margin-right: 20px;
+	padding: 10px;
+	border: 2px solid #111b24;
+	border-radius: 50% 10px 50% 50%;
+	@include res(xl) {
+		width: 80px;
+		height: 80px;
+	}
+	@include res(m) {
+		display: none;
+	}
+	img {
+		display: block;
+		flex-shrink: 0;
+		max-width: 100%;
+		max-height: 55px;
+	}
+}
+
+.about-services__benefit-text {
+	p {
+		@include res(xl) {
+			padding-bottom: 8px;
+		}
+		@include res(s) {
+			padding-bottom: 2px;
+		}
+	}
+	span {
+		font-size: 16px;
+		color: #5f6c77;
+		font-weight: $light;
+		@include res(l) {
+			font-size: 14px;
+		}
+	}
+}
+
+.about-services__list {}
+
+.about-services__banner {}

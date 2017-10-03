@@ -1,0 +1,126 @@
+%grid {
+	flex-shrink: 1;
+	max-width: 100%;
+}
+
+.hidden{
+	display: none !important;
+}
+
+@for $i from 1 through 12 {
+	.grid-#{$i} {
+		@extend %grid;
+		width: 100% / 12 * $i;
+	}
+	.grid-off-#{$i} {
+		margin-left: 1 / 12 * $i * 100%;
+	}
+}
+
+@each $breakpoint,$value in $breakpoints {
+	@include res($breakpoint){
+		@for $i from 1 through 12 {
+			.grid-#{$i}_#{$breakpoint} {
+				width: 100% / 12 * $i;
+			}
+			.grid-off-#{$i}_#{$breakpoint} {
+				margin-left: 1 / 12 * $i * 100%;
+			}
+		}
+	}
+}
+
+.container{
+	margin: 0 auto;
+	width: 100%;
+	max-width: $container_width;
+	position: relative;
+	padding-left: 16px;
+	padding-right: 16px;
+	@include res(s) {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -$gutter;
+	margin-right: -$gutter;
+	@include res(s) {
+		margin-left: -$gutter-mobile;
+		margin-right: -$gutter-mobile;
+	}
+
+	[class^="grid"]{
+		padding-left: $gutter;
+		padding-right: $gutter;
+		@include res(s) {
+			padding-left: $gutter-mobile;
+			padding-right: $gutter-mobile;
+		}
+	}
+	&--center {
+		align-items: center;
+	}
+}
+
+.row-ng{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.def-sec {
+	padding-top: $pad-l;
+	padding-bottom: $pad-l;
+	@include res(xl) {
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
+	}
+	@include res(l) {
+		padding-top: $pad-s;
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-top: $pad-xs;
+		padding-bottom: $pad-xs;
+	}
+}
+
+.def-sec-top {
+	padding-top: $pad-m;
+	@include res(l) {
+		padding-top: $pad-s;
+	}
+	@include res(s) {
+		padding-top: $pad-xs;
+	}
+}
+
+.def-sec-bottom {
+	padding-bottom: $pad-m;
+	@include res(l) {
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
+}
+
+.clearfix{
+	&:before{
+		content: " ";
+		display: table;
+	}
+	&:after{
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
