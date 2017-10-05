@@ -2,7 +2,15 @@
 
 .about-services {}
 
-.about-services__benefits {}
+.about-services__benefits {
+	padding-bottom: $pad-m;
+	@include res(l) {
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
+}
 
 .about-services__benefit {
 	display: flex;
@@ -35,15 +43,23 @@
 	@include res(xl) {
 		width: 80px;
 		height: 80px;
+		border-radius: 50% 8px 50% 50%;
 	}
 	@include res(m) {
-		display: none;
+		width: 50px;
+		height: 50px;
+		padding: 6px;
+		margin-bottom: 10px;
+		border-radius: 50% 6px 50% 50%;
 	}
 	img {
 		display: block;
 		flex-shrink: 0;
 		max-width: 100%;
 		max-height: 55px;
+		@include res(m) {
+			max-height: 30px;
+		}
 	}
 }
 
@@ -66,6 +82,112 @@
 	}
 }
 
-.about-services__list {}
+.about-services__list {
+	display: flex;
+	flex-wrap: wrap;
+}
 
-.about-services__banner {}
+.about-services__item {
+	position: relative;
+	width: calc(50% - 26px);
+	margin-bottom: 26px;
+	margin-left: $gutter;
+	margin-right: $gutter;
+	padding-top: $pad-s;
+	padding-bottom: $pad-s;
+	padding-left: $pad-s;
+	padding-right: $pad-s;
+	border: 1px solid #e2e2e2;
+	border-radius: 10px;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	@include res(xl) {
+		padding-top: $pad-xs;
+		padding-bottom: $pad-xs;
+		padding-left: $pad-xs;
+		padding-right: $pad-xs;
+	}
+	@include res(s) {
+		width: 100%;
+		margin-left: $gutter-mobile;
+		margin-right: $gutter-mobile;
+		margin-bottom: 20px;
+		padding-bottom: $pad-xxs;
+		padding-left: $pad-xxs;
+		padding-right: $pad-xxs;
+	}
+	&:after {
+		@include res(m) {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: transparentize(#fff, 0.6);
+			z-index: 0;
+		}
+		@include res(s) {
+			background: transparentize(#fff, 0.4);
+		}
+	}
+	ul {
+		position: relative;
+		max-width: 50%;
+		margin-top: -10px;
+		list-style: none;
+		z-index: 1;
+		@include res(m) {
+			max-width: 100%;
+		}
+		@include res(s) {
+			margin-top: -8px;
+		}
+	}
+	a {
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 16px;
+		color: #111b24;
+		line-height: 1;
+		transition: all 0.3s ease;
+		&:hover {
+			color: $orange;
+		}
+		@include res(s) {
+			padding-top: 6px;
+			padding-bottom: 6px;
+			font-size: 14px;
+		}
+	}
+	.h3 {
+		position: relative;
+		max-width: 80%;
+		z-index: 1;
+		@include res(l) {
+			max-width: 100%;
+		}
+	}
+	&--vertical {
+		width: calc(33.33333% - 26px);
+		padding-bottom: 300px;
+		background-position: bottom center;
+		background-size: 100% auto;
+		@include res(l) {
+			padding-bottom: 250px;
+		}
+		@include res(m) {
+			width: calc(50% - 26px);
+			padding-bottom: $pad-xs;
+		}
+		@include res(s) {
+			width: 100%;
+		}
+		ul {
+			max-width: 100%;
+		}
+	}
+}
+
+.about-services__gift {}

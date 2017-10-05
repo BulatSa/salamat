@@ -17,11 +17,20 @@ h1, .h1 {
 	font-family: $font-head;
 	font-size: 72px;
 	font-weight: 600;
+	@include res(xl) {
+		font-size: 64px;
+	}
 	@include res(l) {
 		font-size: 58px;
 	}
+	@include res(m) {
+		font-size: 42px;
+	}
 	@include res(s) {
-		font-size: 32px;
+		font-size: 28px;
+	}
+	@include res(xs) {
+		font-size: 26px;
 	}
 }
 
@@ -32,26 +41,48 @@ h2, .h2 {
 	font-family: $font-head;
 	font-size: 48px;
 	font-weight: 600;
+	@include res(xl) {
+		font-size: 42px;
+	}
 	@include res(l) {
 		font-size: 38px;
 	}
+	@include res(m) {
+		font-size: 32px;
+	}
 	@include res(s) {
-		font-size: 26px;
+		font-size: 24px;
 		padding-bottom: $pad-xxs;
+	}
+	@include res(xs) {
+		font-size: 22px;
 	}
 }
 
 h3, .h3 {
 	display: block;
+	padding-bottom: $pad-xs;
 	line-height: 1;
 	font-family: $font-head;
 	font-size: 36px;
 	font-weight: 600;
+	@include res(xl) {
+		font-size: 34px;
+		padding-bottom: 15px;
+	}
 	@include res(l) {
 		font-size: 30px;
+		padding-bottom: 15px;
+	}
+	@include res(m) {
+		font-size: 26px;
 	}
 	@include res(s) {
 		font-size: 22px;
+		padding-bottom: $pad-xxs;
+	}
+	@include res(xs) {
+		font-size: 20px;
 	}
 }
 

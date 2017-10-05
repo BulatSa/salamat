@@ -27,3 +27,23 @@
 	font-weight: 600;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: url('../fonts/hinted-subset-PFBeauSansPro-Bold.eot');
+	src: url('../fonts/hinted-subset-PFBeauSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/hinted-subset-PFBeauSansPro-Bold.woff') format('woff'),
+	url('../fonts/hinted-subset-PFBeauSansPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: url('../fonts/hinted-subset-PFBeauSansPro-BoldItalic.eot');
+	src: url('../fonts/hinted-subset-PFBeauSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/hinted-subset-PFBeauSansPro-BoldItalic.woff') format('woff'),
+	url('../fonts/hinted-subset-PFBeauSansPro-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
