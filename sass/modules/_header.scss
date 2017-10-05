@@ -1,0 +1,40 @@
+.header-sec {
+	background: #fff;
+}
+
+.header {}
+
+.header-top-wrap {
+	padding-top: $pad-xxs;
+	padding-bottom:$pad-xxs;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	a {
+		transition: all 0.3s ease;
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+.header__geo {}
+
+.header__geo-city {}
+
+.header__geo-adress {}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+.header__personal {}
+
+.header-middle-wrap {}
+
+.header-bottom-wrap {}
