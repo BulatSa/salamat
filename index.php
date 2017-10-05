@@ -2,13 +2,29 @@
 
 <section class="header-sec">
 	<div class="header">
-		<div class="header-top">
+		<div class="header-top-wrap">
+			<div class="header-top container">
+				<div class="header__geo">
+					<span class="header__geo-city">Ваш город: <a href="#">Казань</a></span>
+					<a href="#" class="header__geo-adress"><i class="i-geo"></i>Адреса салонов</a>
+				</div>
+				<ul class="header__nav">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Обмен и возврат</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li class="green-col"><a href="#"><i class="i-percent"></i>Акции</a></li>
+				</ul>
+				<div class="header__personal">
+					<a href="#"><i class="i-user"></i>Личный кабинет</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle-wrap">
 			<div class="container"></div>
 		</div>
-		<div class="header-middle">
-			<div class="container"></div>
-		</div>
-		<div class="header-bottom">
+		<div class="header-bottom-wrap">
 			<div class="container"></div>
 		</div>
 	</div>
