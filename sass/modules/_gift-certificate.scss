@@ -1,0 +1,109 @@
+.gift-certificate {
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
+	background: #21e3c3;
+	overflow: hidden;
+	@include res(s) {
+		flex-wrap: wrap;
+	}
+	&:hover {
+		.gift-certificate__img {
+			img {
+				box-shadow: 0 18px 30px transparentize(#08372f, 0.65);
+				transform: translateY(-3px);
+			}
+			span {
+				transform: translateY(-3px);
+			}
+		}
+	}
+}
+
+.gift-certificate__img {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 500px;
+	padding-top: $pad-m;
+	padding-bottom: $pad-m;
+	padding-left: $pad-m;
+	padding-right: $pad-m;
+	background: url('../img/bg-gift-certificate.png') no-repeat center, #21e3c3;
+	background-size: cover;
+	@include res(m) {
+		background-size: contain;
+		padding-left: $pad-s;
+		padding-right: $pad-s;
+	}
+	@include res(s) {
+		width: 100%;
+		padding-left: $pad-xs;
+		padding-right: $pad-xs;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+		border-radius: 20px;
+		transition: all 0.3s ease;
+		box-shadow: 0 18px 30px transparentize(#08372f, 1);
+	}
+	span {
+		position: absolute;
+		top: 74%;
+		left: 36%;
+		color: $orange;
+		font-size: 28px;
+		font-family: $font-head;
+		font-weight: bold;
+		font-style: italic;
+		line-height: 1;
+		transition: all 0.3s ease;
+		@include res(m) {
+			top: 66%;
+			font-size: 22px;
+		}
+		@include res(s) {
+			top: 74%;
+			left: 40%;
+			font-size: 20px;
+		}
+		@include res(xs) {
+			top: 72%;
+			left: 36%;
+			font-size: 20px;
+		}
+	}
+	em {
+		font-size: 65%;
+	}
+}
+
+.gift-certificate__info {
+	width: 500px;
+	padding-top: $pad-m;
+	padding-bottom: $pad-m;
+	padding-left: $pad-xs;
+	padding-right: $pad-xs;
+	@include res(s) {
+		width: 100%;
+		padding-top: $pad-xs;
+		padding-bottom: $pad-xs;
+		padding-left: $pad-xxs;
+		padding-right: $pad-xxs;
+	}
+	.user-content {
+		color: #14112e;
+	}
+	.btn {
+		margin-top: $pad-m;
+		@include res(l) {
+			margin-top: $pad-s;
+		}
+		@include res(m) {
+			margin-top: $pad-xs;
+		}
+	}
+}

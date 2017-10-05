@@ -66,12 +66,29 @@ $(document).ready(function(){
 
 
 /***********************
-Flickity BEGIN
+Slick BEGIN
 ***********************/
+$('#big-slider').on('init', function(){
+	$('.big-slider-dots').wrap("<div class='big-slider-dots-wrap container'></div>");
+});
+
+$('#big-slider').slick({
+	adaptiveHeight: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	//autoplay: true,
+	infinite: false,
+	nextArrow: '.big-slider-nav .i-nav-right',
+	prevArrow: '.big-slider-nav .i-nav-left',
+	dots: true,
+	dotsClass: 'big-slider-dots'
+});
+
 $('#offers-special').slick({
 	adaptiveHeight: true,
 	slidesToShow: 4,
 	slidesToScroll: 4,
+	lazyLoad: 'progressive',
 	infinite: false,
 	nextArrow: '#offers-special-nav .i-nav-right',
 	prevArrow: '#offers-special-nav .i-nav-left',
@@ -105,6 +122,7 @@ $('#offers-new').slick({
 	slidesToShow: 4,
 	slidesToScroll: 4,
 	infinite: false,
+	lazyLoad: 'progressive',
 	nextArrow: '#offers-new-nav .i-nav-right',
 	prevArrow: '#offers-new-nav .i-nav-left',
 	responsive: [
@@ -132,7 +150,7 @@ $('#offers-new').slick({
 	]
 });
 /***********************
-Flickity END
+ Slick END
 ***********************/
 
 

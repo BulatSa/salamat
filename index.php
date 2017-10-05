@@ -1,5 +1,69 @@
 ﻿<?php include('header.php'); ?>
 
+<section class="header-sec">
+	<div class="header">
+		<div class="header-top">
+			<div class="container"></div>
+		</div>
+		<div class="header-middle">
+			<div class="container"></div>
+		</div>
+		<div class="header-bottom">
+			<div class="container"></div>
+		</div>
+	</div>
+</section>
+
+<section class="big-slider-sec">
+	<div class="big-slider-nav-wrap container">
+		<div class="big-slider-nav">
+			<i class="i-nav-left"></i>
+			<i class="i-nav-right"></i>
+		</div>
+	</div>
+	<div class="big-slider" id="big-slider">
+		<div class="big-slide" style="background-image: url('../img/big-slide-1.jpg')">
+			<div class="container">
+				<div class="row">
+					<div class="grid-7 grid-12_s">
+						<span class="big-slide__label">Акция!</span>
+						<div class="big-slide__info">
+							<p class="h1">Закажите подушку «Тривес»</p>
+							<p class="big-slide__descr h2">и получите массажный коврик в подарок!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="big-slide" style="background-image: url('../img/big-slide-1.jpg')">
+			<div class="container">
+				<div class="row">
+					<div class="grid-7 grid-12_s">
+						<span class="big-slide__label">Акция!</span>
+						<div class="big-slide__info">
+							<p class="h1">Закажите подушку «Тривес»</p>
+							<p class="big-slide__descr h2">и получите массажный коврик в подарок!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="big-slide" style="background-image: url('../img/big-slide-1.jpg')">
+			<div class="container">
+				<div class="row">
+					<div class="grid-7 grid-12_s">
+						<span class="big-slide__label">Акция!</span>
+						<div class="big-slide__info">
+							<p class="h1">Закажите подушку «Тривес»</p>
+							<p class="big-slide__descr h2">и получите массажный коврик в подарок!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="about-services-sec def-sec">
 	<div class="container">
 		<div class="about-services">
@@ -39,15 +103,92 @@
 				</div>
 			</div>
 			<div class="about-services__list row">
-				<div class="grid-6"></div>
-				<div class="grid-6"></div>
-				<div class="grid-4"></div>
-				<div class="grid-4"></div>
-				<div class="grid-4"></div>
-			</div>
-			<div class="about-services__banner">
-				<div class="gift-certificate">
+				<div class="about-services__item" style="background-image: url('../img/bg-about-services-fitness.jpg')">
+					<p class="h3">Фитнес и ЛФК</p>
+					<ul>
+						<li><a href="#">Ортопедические стельки</a></li>
+						<li><a href="#">Изделия для суставов</a></li>
+						<li><a href="#">Изделия для позвоночника</a></li>
+						<li><a href="#">Компрессионные гольфы</a></li>
+						<li><a href="#">Массажеры</a></li>
+						<li><a href="#">Гимнастические мячи (фитболы)</a></li>
+						<li><a href="#">Обруч и тренажеры</a></li>
+						<li><a href="#">Палки для скандинавской ходьбы</a></li>
+						<li><a href="#">Коррекция фигуры (пояса, шорты, бриджи, вакуумные бынки)</a></li>
+					</ul>
+				</div>
 
+				<div class="about-services__item" style="background-image: url('../img/bg-about-services-pregnant.jpg')">
+					<p class="h3">Для беременных и мам</p>
+					<ul>
+						<li><a href="#">Ортопедические обувь и стельки</a></li>
+						<li><a href="#">Компрессионный трикотаж</a></li>
+						<li><a href="#">Антиэмболический (госпитальный) трикотаж</a></li>
+						<li><a href="#">Бандажи</a></li>
+						<li><a href="#">Подушка для беременных	и кормления</a></li>
+						<li><a href="#">Гимнастические мячи (фитболы)</a></li>
+						<li><a href="#">Массажные коврики и массажеры</a></li>
+						<li><a href="#">Матрас в кроватку и коляску</a></li>
+						<li><a href="#">Детские подушки</a></li>
+					</ul>
+				</div>
+
+				<div class="about-services__item about-services__item--vertical" style="background-image: url('../img/bg-about-services-family.jpg')">
+					<p class="h3">Для здоровья всей семьи</p>
+					<ul>
+						<li><a href="#">Ортопедическая обувь и стельки</a></li>
+						<li><a href="#">Ортопедические подушки и матрасы</a></li>
+						<li><a href="#">Изделия для позвоночника</a></li>
+						<li><a href="#">Приборы для домашней физиотерапии</a></li>
+						<li><a href="#">Массажеры, фитболы, палки</a></li>
+						<li><a href="#">Массажные коврики для всей семьи</a></li>
+						<li><a href="#">Изделия для суставов</a></li>
+						<li><a href="#">Уход за лицом и телом</a></li>
+						<li><a href="#">Бандажи</a></li>
+					</ul>
+				</div>
+
+				<div class="about-services__item about-services__item--vertical" style="background-image: url('../img/bg-about-services-kids.jpg')">
+					<p class="h3">Для здоровья детей</p>
+					<ul>
+						<li><a href="#">Ортопедические подушки и матрасы</a></li>
+						<li><a href="#">Приборы для домашней физиотерапии</a></li>
+						<li><a href="#">Корректоры осанки</a></li>
+						<li><a href="#">Массажеры для детей</a></li>
+						<li><a href="#">Массажные коврики</a></li>
+						<li><a href="#">Детская обувь</a></li>
+						<li><a href="#">Ортопедические стельки</a></li>
+					</ul>
+				</div>
+
+				<div class="about-services__item about-services__item--vertical" style="background-image: url('../img/bg-about-services-old.jpg')">
+					<p class="h3">Реабилитация и уход</p>
+					<ul>
+						<li><a href="#">Послеоперационная обувь</a></li>
+						<li><a href="#">Противопролежневые матрасы</a></li>
+						<li><a href="#">Ходунки</a></li>
+						<li><a href="#">Костыли</a></li>
+						<li><a href="#">Трости для хотьбы</a></li>
+						<li><a href="#">Инвалидные коляски</a></li>
+						<li><a href="#">Кресла-туалеты</a></li>
+						<li><a href="#">Бинты</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="about-services__gift">
+				<div class="gift-certificate">
+					<div class="gift-certificate__img">
+						<img src="img/gift-certificate.png" alt="">
+						<span>1000 <em>рублей</em></span>
+					</div>
+					<div class="gift-certificate__info">
+						<div class="user-content">
+							<h3>Подарочный сертификат</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam animi beatae deserunt dignissimos dolore dolorem ducimus eveniet excepturi exercitationem fugiat ipsam itaque, labore laborum omnis pariatur ratione repudiandae saepe.</p>
+						</div>
+						<a href="#" class="btn">Купить сертификат <i class="i-right"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -68,7 +209,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 						</div>
 						<div class="product-item__info">
 							<p class="product-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -99,7 +240,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 						</div>
 						<div class="product-item__info">
 							<p class="product-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -130,7 +271,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 						</div>
 						<div class="product-item__info">
 							<p class="product-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -161,7 +302,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 						</div>
 						<div class="product-item__info">
 							<p class="product-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -192,7 +333,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 						</div>
 						<div class="product-item__info">
 							<p class="product-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -223,7 +364,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 						</div>
 						<div class="product-item__info">
 							<p class="product-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -254,7 +395,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 						</div>
 						<div class="product-item__info">
 							<p class="product-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -285,7 +426,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 						</div>
 						<div class="product-item__info">
 							<p class="product-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -330,7 +471,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 							<div class="product-item__labels">
 								<span class="product-item__label"><span>-30%</span></span>
 								<span class="product-item__label"><span>хит</span></span>
@@ -366,7 +507,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 							<div class="product-item__labels">
 								<span class="product-item__label"><span>-30%</span></span>
 								<span class="product-item__label"><span>хит</span></span>
@@ -402,7 +543,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 							<div class="product-item__labels">
 								<span class="product-item__label"><span>-30%</span></span>
 								<span class="product-item__label"><span>хит</span></span>
@@ -438,7 +579,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 							<div class="product-item__labels">
 								<span class="product-item__label"><span>-30%</span></span>
 								<span class="product-item__label"><span>хит</span></span>
@@ -474,7 +615,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 							<div class="product-item__labels">
 								<span class="product-item__label"><span>-30%</span></span>
 								<span class="product-item__label"><span>хит</span></span>
@@ -510,7 +651,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 							<div class="product-item__labels">
 								<span class="product-item__label"><span>-30%</span></span>
 								<span class="product-item__label"><span>хит</span></span>
@@ -546,7 +687,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 							<div class="product-item__labels">
 								<span class="product-item__label"><span>-30%</span></span>
 								<span class="product-item__label"><span>хит</span></span>
@@ -582,7 +723,7 @@
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
-							<img src="img/offer-item-1.jpg" alt="">
+							<img data-lazy="img/offer-item-1.jpg" alt="">
 							<div class="product-item__labels">
 								<span class="product-item__label"><span>-30%</span></span>
 								<span class="product-item__label"><span>хит</span></span>
