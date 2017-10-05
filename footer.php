@@ -76,9 +76,9 @@
 				</div>
 				<div class="footer__subscribe">
 					<p class="footer__descr">Узнавайте о наших акциях первыми</p>
-					<form class="ajax-form">
-						<input type="text" class="input-text input-text--subscr" name="subscr-mail" placeholder="Введите ваш e-mail" data-req="true">
-						<button class="btn btn--subscr" title="Подписаться"><i class="i-right"></i></button>
+					<form class="subscribe-form">
+						<input type="text" class="input-text" name="subscr-mail" placeholder="Введите e-mail">
+						<button class="btn" title="Подписаться"><i class="i-right"></i></button>
 					</form>
 				</div>
 			</div>

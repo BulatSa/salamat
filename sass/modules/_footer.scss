@@ -132,17 +132,51 @@
 
 .footer__subscribe {
 	padding-top: 42px;
-	form {
-		position: relative;
-		display: inline-block;
+
+	input {
 		width: 100%;
-		margin-top: 5px;
+		height: 48px;
+		font-weight: normal;
+		font-style: normal;
+		color: #fff;
+		padding: 12px 50px 14px 22px;
+		border: 1px solid #fff;
+		border-radius: 25px;
+		background: transparent;
+		@include placeholder {
+			font-size: 16px;
+			color: #fff;
+			opacity: 1;
+			transition: all 0.3s ease;
+			@include res(l) {
+				font-size: 14px;
+			}
+		}
 	}
+
 	.btn {
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 1px;
+		right: 1px;
+		width: 46px;
+		height: 46px;
+		padding: 0;
+		border: none;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.i-right {
+			padding-left: 0;
+		}
 	}
+}
+
+.subscribe-form{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-top: 5px;
 }
 
 .footer-bottom {
@@ -174,6 +208,7 @@
 }
 
 .footer-payment-wrap {
+	border-top: 1px solid #d3d3d3;
 	padding-top: $pad-xs;
 	padding-bottom: $pad-xs;
 	background: #fff;
