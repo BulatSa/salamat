@@ -2,9 +2,9 @@
 	display: block;
 	margin-bottom: $pad-s;
 	border-radius: 10px;
-	transform: translate3d(0,0,0);
-	transition: all 0.3s ease;
 	box-shadow: 0 9px 21px transparentize(#d2e5ec, 1);
+	transition: all 0.3s ease;
+	transform: translate3d(0,0,0);
 	overflow: hidden;
 	&:hover {
 		box-shadow: 0 9px 21px transparentize(#d2e5ec, 0.4);

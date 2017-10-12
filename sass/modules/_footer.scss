@@ -158,15 +158,18 @@
 		position: absolute;
 		top: 1px;
 		right: 1px;
-		width: 46px;
-		height: 46px;
-		padding: 0;
-		border: none;
-		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: 46px;
+		height: 46px;
+		padding: 0;
+		text-align: center;
+		border: none;
+		border-radius: 50%;
 		.i-right {
+			display: inline-block;
+			flex-shrink: 0;
 			padding-left: 0;
 		}
 	}

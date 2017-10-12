@@ -1,3 +1,10 @@
+.rouble {
+	&:before {
+		content: 'q';
+		font-family: 'ALS Rubl', Verdana, sans-serif;
+	}
+}
+
 @font-face {
 	font-family: 'salamat';
 	src:

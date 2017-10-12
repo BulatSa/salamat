@@ -66,6 +66,93 @@ $(document).ready(function(){
 
 
 /***********************
+ Header Menu BEGIN
+ ***********************/
+
+var headerSubMenuWrap = $('.header__submenu-wrap');
+var headerMenu = $('.header__menu');
+var headerSubMenu = $('.header__submenu');
+
+function subMenuPosition() {
+	headerSubMenuWrap.each(function (index) {
+		//console.log($('body').width());
+		var menuWidth = $('.header-bottom').outerWidth();
+		$(this).outerWidth($('body').width());
+		$(this).offset({left:0});
+		$(this).find('.header__submenu').outerWidth(menuWidth);
+	});
+}
+
+subMenuPosition();
+
+$(window).on('resize', function(){
+	subMenuPosition();
+});
+
+
+/***********************
+ Header Menu END
+ ***********************/
+
+
+/***********************
+Basket Transition BEGIN
+***********************/
+function basketTransition() {
+	if($(window).width() > 770) {
+		var $header = $('.header-sec');
+		var $basket = $('.header__basket');
+		var headerHeight = $header.innerHeight();
+		//console.log($(document).scrollTop());
+		if($(document).scrollTop() > headerHeight) {
+			$basket.addClass('fixed');
+		} else {
+			$basket.removeClass('fixed');
+		}
+		window.requestAnimationFrame(basketTransition);
+	}
+
+}
+if($(window).width() > 770) {
+	basketTransition();
+}
+$(window).on('resize', function(){
+	basketTransition();
+});
+/***********************
+Basket Transition END
+***********************/
+
+
+/***********************
+Mobile Menu BEGIN
+***********************/
+function openMenu($menuLink, $menu) {
+	$menuLink.toggleClass('active');
+	$menu.toggleClass('active');
+}
+$('.header-mobile__menu-link').on('click', function(event){
+	event.preventDefault();
+	openMenu($(this),$('.header-mobile__menu'));
+});
+
+function openSubMenu($menuLink) {
+	$('.header-mobile__sub-catalog-link').not($menuLink).removeClass('active');
+	$('.header-mobile__sub-catalog-link').not($menuLink).next('.header-mobile__sub-catalog').slideUp();
+	$menuLink.toggleClass('active');
+	$menuLink.next('.header-mobile__sub-catalog').slideToggle();
+}
+
+$('.header-mobile__sub-catalog-link').on('click', function (event) {
+	event.preventDefault();
+	openSubMenu($(this));
+});
+/***********************
+Mobile Menu END
+***********************/
+
+
+/***********************
 Slick BEGIN
 ***********************/
 $('#big-slider').on('init', function(){

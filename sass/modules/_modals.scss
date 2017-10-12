@@ -7,6 +7,25 @@
 	opacity: 0;
 	will-change: transform,opacity;
 	overflow: visible;
+	&--form {
+		width: 380px;
+		border-radius: 10px;
+		h4 {
+			text-align: center;
+		}
+		input {
+			width: 100%;
+		}
+	}
+}
+
+.modal-descr {
+	margin-bottom: 1.1em;
+	text-align: center;
+	font-size: 16px;
+	@include res(l) {
+		font-size: 14px;
+	}
 }
 
 .fancybox-slide--current {
@@ -20,6 +39,17 @@
 	.modal {
 		transform: translateY(60px) scale(0.9);
 		opacity: 0.5;
+	}
+}
+
+.fancybox-close-small {
+	@include res(s) {
+		width: 28px;
+		height: 28px;
+	}
+	&:before, &:after {
+		width: 18px;
+		margin-left: -9px;
 	}
 }
 
