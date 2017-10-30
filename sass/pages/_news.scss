@@ -12,6 +12,9 @@
 			color: $orange;
 		}
 	}
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .news-item__title {

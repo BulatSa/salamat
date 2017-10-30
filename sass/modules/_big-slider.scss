@@ -24,7 +24,7 @@
 		min-height: 280px;
 	}
 	&.slick-active {
-		.big-slide__label, .big-slide__info .h1, .big-slide__descr {
+		.big-slide__label, .big-slide__title, .big-slide__descr {
 			opacity: 1;
 			transform: translate3d(0,0,0);
 		}
@@ -86,15 +86,33 @@
 	@include res(s) {
 		padding-top: 60px;
 	}
-	.h1 {
-		padding-bottom: $pad-xs;
-		font-weight: bold;
-		opacity: 0;
-		transition: all 0.6s ease 0.6s;
-		transform: translate3d(0,10px,0);
-		@include res(s) {
-			padding-bottom: $pad-xxs;
-		}
+}
+
+.big-slide__title {
+	display: block;
+	padding-bottom: $pad-xs;
+	line-height: 1;
+	font-family: $font-head;
+	font-size: 72px;
+	font-weight: bold;
+	opacity: 0;
+	transition: all 0.6s ease 0.6s;
+	transform: translate3d(0,10px,0);
+	@include res(xl) {
+		font-size: 64px;
+	}
+	@include res(l) {
+		font-size: 58px;
+	}
+	@include res(m) {
+		font-size: 42px;
+	}
+	@include res(s) {
+		padding-bottom: $pad-xxs;
+		font-size: 28px;
+	}
+	@include res(xs) {
+		font-size: 26px;
 	}
 }
 
@@ -105,9 +123,6 @@
 	opacity: 0;
 	transition: all 0.6s ease 0.9s;
 	transform: translate3d(0,10px,0);
-	@include res(l) {
-
-	}
 }
 
 .big-slider-dots-wrap {

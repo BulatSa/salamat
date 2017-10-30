@@ -236,6 +236,33 @@ $('#offers-new').slick({
 		}
 	]
 });
+
+$('.detail__gallery').slick({
+	adaptiveHeight: true,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	infinite: false,
+	lazyLoad: 'progressive',
+	initialSlide: 1,
+	prevArrow: "<button type='button' class='slick-prev'></button>",
+	nextArrow: "<button type='button' class='slick-next'></button>",
+	responsive: [
+		{
+			breakpoint: 680,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
+});
 /***********************
  Slick END
 ***********************/

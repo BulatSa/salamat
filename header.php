@@ -222,7 +222,7 @@
 		</div>
 		<div class="header-middle-wrap">
 			<div class="header-middle container">
-				<a href="#" class="header__logo">
+				<a href="/" class="header__logo">
 					<span class="header__logo-img"><img src="img/icons/logo-header.svg" alt=""></span>
 					<span class="header__logo-text">
 						<img src="img/icons/logo-header-name.svg" alt="">

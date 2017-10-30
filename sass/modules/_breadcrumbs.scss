@@ -1,0 +1,45 @@
+.breadcrumbs {
+	padding-top: 45px;
+	padding-bottom: 25px;
+	@include res(l) {
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	@include res(m) {
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+	@include res(s) {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	a {
+		position: relative;
+		padding-right: 12px;
+		margin-right: 5px;
+		font-size: 14px;
+		color: $orange;
+		line-height: 1.2;
+		@include res(s) {
+			font-size: 12px;
+		}
+		&:after {
+			content: '/';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			color: #233647;
+			font-size: 14px;
+			@include res(s) {
+				font-size: 12px;
+			}
+		}
+		&:last-child {
+			color: #233647;
+			pointer-events: none;
+			&:after {
+				content: none;
+			}
+		}
+	}
+}

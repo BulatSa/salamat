@@ -1,0 +1,122 @@
+.detail-sec {}
+
+.detail {}
+
+.detail__title {}
+
+.detail__title-descr {
+	display: block;
+	padding-bottom: $pad-s;
+	line-height: 1.2;
+	font-family: $font-head;
+	font-size: 26px;
+	color: #b3b3b3;
+	@include res(l) {
+		padding-bottom: $pad-xs;
+	}
+}
+
+.detail__gallery-wrap {
+	margin-top: $pad-m;
+}
+
+.detail__gallery {
+	margin-top: $pad-xs;
+	padding-left: $pad-s;
+	padding-right: $pad-s;
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		width: 36px;
+		height: 36px;
+		border-bottom: 1px solid #1e1e1e;
+		border-right: 1px solid #1e1e1e;
+		border-radius: 2px;
+		background: transparent;
+		outline: none;
+		cursor: pointer;
+		opacity: 0.7;
+		transition: all 0.3s ease;
+		z-index: 1;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.slick-prev {
+		left: 5px;
+		transform: translateY(-50%) rotate(135deg);
+	}
+	.slick-next {
+		right: 5px;
+		transform: translateY(-50%) rotate(-45deg);
+	}
+	.slick-disabled {
+		opacity: 0.4;
+		pointer-events: none;
+	}
+}
+
+.detail__gallery-item {
+	overflow: hidden;
+	img {
+		display: block;
+		max-width: 100%;
+		margin: auto;
+		border-radius: 10px;
+	}
+}
+
+.detail__more {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-top: $pad-s;
+	@include res(m) {
+		flex-direction: column-reverse;
+	}
+}
+
+.detail__social {
+	@include res(m) {
+		margin-bottom: $pad-s;
+	}
+	p {
+		padding-bottom: $pad-xxs;
+		font-size: 18px;
+		color: #5f6c77;
+	}
+	.ya-share2__container {
+		width: 100%;
+	}
+	.ya-share2__list {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.ya-share2__container .ya-share2__icon {
+		width: 44px;
+		height: 44px;
+	}
+	.ya-share2__badge {
+		border-radius: 50% 5px 50% 50%;
+	}
+}
+
+.detail__back {
+	display: inline-block;
+	color: $orange;
+	font-size: 14px;
+	border-bottom: 1px dotted $orange;
+	white-space: nowrap;
+	transition: all 0.3s ease;
+	&:hover {
+		border-color: transparent;
+	}
+	span, i {
+		vertical-align: middle;
+	}
+	i {
+		display: inline-block;
+		margin-right: 2px;
+	}
+}

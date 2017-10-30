@@ -64,6 +64,9 @@
 	&--center {
 		align-items: center;
 	}
+	&--middle {
+		justify-content: center;
+	}
 }
 
 .row-ng{
@@ -100,7 +103,7 @@
 }
 
 .def-sec-bottom {
-	padding-bottom: $pad-m;
+	padding-bottom: $pad-l;
 	@include res(xl) {
 		padding-bottom: $pad-m;
 	}

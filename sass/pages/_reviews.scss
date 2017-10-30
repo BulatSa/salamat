@@ -12,4 +12,7 @@
 		margin-bottom: $pad-xs;
 		padding: 12px;
 	}
+	&:last-child {
+		margin-bottom: 0;
+	}
 }

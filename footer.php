@@ -64,6 +64,7 @@
 				<p class="footer__descr">Cправочная по Казани</p>
 				<a href="tel:88000000000" class="footer__phone">+7 (843) 123-00-00</a>
 				<a href="mailto:info@salamat-med.ru" class="footer__mail">info@salamat-med.ru</a>
+				<p class="footer__descr">ИНН 77000000000 <br>КПП 77000000000 <br>ОГРН 77000000000</p>
 			</div>
 			<div class="grid-3 grid-6_m grid-12_xs">
 				<p class="footer__title">Следите за нами</p>

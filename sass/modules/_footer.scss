@@ -1,8 +1,14 @@
 .footer-sec {
+	position: relative;
+	margin-top: $pad-xs;
 	padding-bottom: $pad-m;
 	background: #14112e;
 	@include res(l) {
+		margin-top: $pad-xxs;
 		padding-bottom: $pad-xs;
+	}
+	@include res(s) {
+		margin-top: 0;
 	}
 }
 
@@ -40,7 +46,7 @@
 	padding-top: 7px;
 	padding-bottom: 7px;
 	font-size: 15px;
-	line-height: 1.2;
+	line-height: 1.3;
 	@include res(xl) {
 		font-size: 14px;
 	}
@@ -68,6 +74,8 @@
 }
 
 .footer__mail {
+	display: inline-block;
+	margin-bottom: 15px;
 	font-size: 15px;
 	line-height: 1.2;
 	transition: all 0.3s ease;

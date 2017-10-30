@@ -13,31 +13,8 @@ a{
 
 h1, .h1 {
 	display: block;
-	line-height: 1;
-	font-family: $font-head;
-	font-size: 72px;
-	font-weight: 600;
-	@include res(xl) {
-		font-size: 64px;
-	}
-	@include res(l) {
-		font-size: 58px;
-	}
-	@include res(m) {
-		font-size: 42px;
-	}
-	@include res(s) {
-		font-size: 28px;
-	}
-	@include res(xs) {
-		font-size: 26px;
-	}
-}
-
-h2, .h2 {
-	display: block;
 	padding-bottom: $pad-xs;
-	line-height: 1;
+	line-height: 1.2;
 	font-family: $font-head;
 	font-size: 48px;
 	font-weight: 600;
@@ -59,10 +36,10 @@ h2, .h2 {
 	}
 }
 
-h3, .h3 {
+h2, .h2 {
 	display: block;
 	padding-bottom: $pad-xs;
-	line-height: 1;
+	line-height: 1.2;
 	font-family: $font-head;
 	font-size: 36px;
 	font-weight: 600;
@@ -86,10 +63,10 @@ h3, .h3 {
 	}
 }
 
-h4, .h4 {
+h3, .h3 {
 	display: block;
 	padding-bottom: $pad-xxs;
-	line-height: 1;
+	line-height: 1.2;
 	font-family: $font-head;
 	font-size: 22px;
 	font-weight: 600;
@@ -98,6 +75,21 @@ h4, .h4 {
 	}
 	@include res(s) {
 		font-size: 18px;
+	}
+}
+
+h4, .h4 {
+	display: block;
+	padding-bottom: $pad-xxs;
+	line-height: 1.2;
+	font-family: $font-head;
+	font-size: 20px;
+	font-weight: 600;
+	@include res(l) {
+		font-size: 18px;
+	}
+	@include res(s) {
+		font-size: 16px;
 	}
 }
 
@@ -119,21 +111,55 @@ h4, .h4 {
 	font-size: 16px;
 	line-height: 1.4;
 	color: #5f6c77;
+	@include res(l) {
+		font-size: 15px;
+	}
 	@include res(s) {
 		font-size: 14px;
 	}
 	p {
 		font-size: 16px;
 		padding-bottom: 1em;
-		@include res(s) {
+		@include res(l) {
 			font-size: 15px;
+		}
+		@include res(s) {
+			font-size: 14px;
 		}
 		&:last-child {
 			padding-bottom: 0;
 		}
+		&+h3, &+h4 {
+			padding-top: 15px;
+			@include res(l) {
+				padding-top: 12px;
+			}
+			@include res(s) {
+				padding-top: 8px;
+			}
+		}
 	}
 	b {
 		color: #233647;
+	}
+	a {
+		color: $orange;
+		&[target=_blank] {
+			padding-bottom: 2px;
+			border-bottom: 2px dotted $orange;
+			transition: all 0.3s ease;
+			&:hover {
+				border-color: transparent;
+			}
+		}
+	}
+	iframe {
+		margin-top: $pad-s;
+		margin-bottom: $pad-s;
+		@include res(l) {
+			margin-top: $pad-xs;
+			margin-bottom: $pad-xs;
+		}
 	}
 	&--mini {
 		font-size: 14px;
