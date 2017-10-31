@@ -1,0 +1,18 @@
+<svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" width="50.111" height="49.282" viewBox="0 0 50.111 49.282">
+  <title>mail-subscribe</title>
+  <path d="M398.062,735.572l-3.315-2.828a2.884,2.884,0,0,0-3.609,0l-3.5,2.983" transform="translate(-368.04 -731.36)" style="fill: none;stroke: #111b24;stroke-linejoin: round;stroke-width: 1.5px"/>
+  <polyline points="3.728 17.992 0.75 20.532 0.861 20.532 0.861 20.527 0.855 20.532 0.861 20.532 0.861 48.532 49.361 48.532 49.361 20.032 49.078 20.032 49.361 20.454 49.361 20.532 49.056 20.532 46.165 18.065" style="fill: none;stroke: #111b24;stroke-linejoin: round;stroke-width: 1.5px"/>
+  <polyline points="3.861 23.282 3.861 4.532 46.361 4.532 46.361 23.282" style="fill: none;stroke: #21e7c6;stroke-miterlimit: 10;stroke-width: 1.5px"/>
+  <g>
+    <path d="M417.336,751.891l-6.062,5.17L407,760.708c-.5.426-1.16.989-1.819,1.551l-4.257,3.632H385.058L380.8,762.26c-.659-.563-1.318-1.126-1.82-1.551l-4.274-3.647-6.062-5.17h.256v28h48.5v-28Z" transform="translate(-368.04 -731.36)" style="fill: none;stroke: #111b24;stroke-linejoin: bevel;stroke-width: 1.5px"/>
+    <g>
+      <path d="M369.176,779.313l5.616-4.785,4.238-3.646c.5-.427,1.151-.989,1.8-1.552l4.2-3.608" transform="translate(-368.04 -731.36)" style="fill: none;stroke: #111b24;stroke-miterlimit: 10;stroke-width: 1.5px"/>
+      <path d="M400.813,765.721l4.2,3.608c.653.563,1.307,1.125,1.8,1.552l4.239,3.646,6.045,5.195" transform="translate(-368.04 -731.36)" style="fill: none;stroke: #111b24;stroke-miterlimit: 10;stroke-width: 1.5px"/>
+    </g>
+  </g>
+  <g>
+    <path d="M397.44,756.355a7.162,7.162,0,1,1,1.225-10.252" transform="translate(-368.04 -731.36)" style="fill: none;stroke: #21e7c6;stroke-linejoin: round;stroke-width: 1.5px"/>
+    <path d="M395.381,747.3s-2.942-.671-4.645.929c-2.05,1.926-1.606,4.92.31,5.471a2.173,2.173,0,0,0,2.825-1.536C394.091,751.53,395.381,747.3,395.381,747.3Z" transform="translate(-368.04 -731.36)" style="fill: none;stroke: #21e7c6;stroke-width: 1.5px"/>
+    <path d="M395.175,748.02s-1.26,4.42-.388,5.214c2.555,2.323,8.439-3.717,2.71-8.285" transform="translate(-368.04 -731.36)" style="fill: none;stroke: #21e7c6;stroke-linejoin: round;stroke-width: 1.5px"/>
+  </g>
+</svg>

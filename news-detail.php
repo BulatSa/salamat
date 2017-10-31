@@ -3,7 +3,7 @@
 <section class="breadcrumbs-sec">
 	<div class="breadcrumbs container">
 		<a href="/">Главная</a>
-		<a href="#">Акции</a>
+		<a href="#">Новости</a>
 		<a href="#">Интресный и качественный заголовок</a>
 	</div>
 </section>
@@ -13,7 +13,7 @@
 	<div class="container">
 		<div class="detail">
 			<h1 class="detail__title">Интресный и качественный заголовок</h1>
-			<p class="detail__title-descr">Акция действует с 12.03.2017 до 09.05.2017</p>
+			<p class="detail__title-descr">12/03/2017</p>
 			<div class="user-content">
 				<p>Обращаем внимание всех посетителей сайта и интернет магазина, что реализован очень удобный поиск по интернет магазину и по сайту отдельно. Достаточно в строке поиска ввести более 3-х букв названия того, что Вы ищете, и система предложит Вам наиболее подходящие запросы по Вашей теме. Строка поиска расположена во втором горизонтальном меню, справа, как указано на картинке. Попробуйте - Вам понравится умный поиск на нашем сайте!!!</p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/7Mk_omVy1zs" frameborder="0" allowfullscreen></iframe>

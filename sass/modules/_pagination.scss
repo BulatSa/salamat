@@ -1,0 +1,66 @@
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	padding-top:$pad-m;
+	color: $orange;
+	@include res(s) {
+		padding-top: $pad-s;
+		flex-direction: column;
+	}
+}
+
+.pagination__pages {
+	display: flex;
+	margin-left: -10px;
+	@include res(s) {
+		justify-content: center;
+	}
+	a {
+		display: block;
+		padding-left: 8px;
+		padding-right: 8px;
+		transition: all 0.3s ease;
+		&:hover {
+			color: $green;
+		}
+		&.current {
+			color: #ae9696;
+		}
+	}
+}
+
+.pagination__nav {
+	display: flex;
+	margin-right: -10px;
+	font-size: 18px;
+	@include res(m) {
+		font-size: 16px;
+	}
+	@include res(s) {
+		justify-content: center;
+		margin-top: 15px;
+		margin-left: -10px;
+		font-size: 14px;
+	}
+	a {
+		display: flex;
+		align-items: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		transition: all 0.3s ease;
+		&:last-child {
+			text-align: right;
+			i {
+				margin-left: 5px;
+				margin-right: 0;
+			}
+		}
+		&:hover {
+			color: $green;
+		}
+	}
+	i {
+		margin-right: 5px;
+		font-size: 8px;
+	}
+}

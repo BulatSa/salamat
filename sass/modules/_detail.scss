@@ -1,6 +1,8 @@
 .detail-sec {}
 
-.detail {}
+.detail {
+	max-width: 700px;
+}
 
 .detail__title {}
 
@@ -21,48 +23,39 @@
 }
 
 .detail__gallery {
-	margin-top: $pad-xs;
-	padding-left: $pad-s;
-	padding-right: $pad-s;
-	.slick-arrow {
-		position: absolute;
-		top: 50%;
-		width: 36px;
-		height: 36px;
-		border-bottom: 1px solid #1e1e1e;
-		border-right: 1px solid #1e1e1e;
-		border-radius: 2px;
-		background: transparent;
-		outline: none;
-		cursor: pointer;
-		opacity: 0.7;
-		transition: all 0.3s ease;
-		z-index: 1;
-		&:hover {
-			opacity: 1;
-		}
-	}
-	.slick-prev {
-		left: 5px;
-		transform: translateY(-50%) rotate(135deg);
-	}
-	.slick-next {
-		right: 5px;
-		transform: translateY(-50%) rotate(-45deg);
-	}
-	.slick-disabled {
-		opacity: 0.4;
-		pointer-events: none;
-	}
+
 }
 
 .detail__gallery-item {
+	position: relative;
 	overflow: hidden;
 	img {
 		display: block;
 		max-width: 100%;
 		margin: auto;
 		border-radius: 10px;
+	}
+	a {
+		position: relative;
+		display: block;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 32px;
+			height: 32px;
+			background: url('../img/icons/zoom-in.svg') no-repeat center;
+			background-size: 100%;
+			opacity: 0;
+			transition: all 0.3s ease;
+			transform: translate3d(-50%,-50%,0);
+		}
+		&:hover {
+			&:after {
+				opacity: 1;
+			}
+		}
 	}
 }
 
@@ -84,6 +77,9 @@
 		padding-bottom: $pad-xxs;
 		font-size: 18px;
 		color: #5f6c77;
+		@include res(l) {
+			font-size: 16px;
+		}
 	}
 	.ya-share2__container {
 		width: 100%;
@@ -96,6 +92,10 @@
 	.ya-share2__container .ya-share2__icon {
 		width: 44px;
 		height: 44px;
+		@include res(l) {
+			width: 40px;
+			height: 40px;
+		}
 	}
 	.ya-share2__badge {
 		border-radius: 50% 5px 50% 50%;
@@ -104,9 +104,10 @@
 
 .detail__back {
 	display: inline-block;
+	padding-bottom: 2px;
 	color: $orange;
 	font-size: 14px;
-	border-bottom: 1px dotted $orange;
+	border-bottom: 1px solid $orange;
 	white-space: nowrap;
 	transition: all 0.3s ease;
 	&:hover {
@@ -117,6 +118,6 @@
 	}
 	i {
 		display: inline-block;
-		margin-right: 2px;
+		margin-right: 4px;
 	}
 }

@@ -30,6 +30,12 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.i-arrow-left:before {
+	content: "\e90e";
+}
+.i-arrow-right:before {
+	content: "\e90f";
+}
 .i-basket:before {
 	content: "\e900";
 }
@@ -71,7 +77,4 @@ i {
 }
 .i-nav-right:before {
 	content: "\e90d";
-}
-.i-arrow-left:before {
-	content: "\e90e";
 }

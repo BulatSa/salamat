@@ -3,8 +3,7 @@
 <section class="breadcrumbs-sec">
 	<div class="breadcrumbs container">
 		<a href="/">Главная</a>
-		<a href="#">Акции</a>
-		<a href="#">Интресный и качественный заголовок</a>
+		<a href="#">Компенсация ФСС</a>
 	</div>
 </section>
 
@@ -12,8 +11,7 @@
 <section class="detail-sec def-sec-bottom">
 	<div class="container">
 		<div class="detail">
-			<h1 class="detail__title">Интресный и качественный заголовок</h1>
-			<p class="detail__title-descr">Акция действует с 12.03.2017 до 09.05.2017</p>
+			<h1 class="detail__title">Компенсанциря ФСС</h1>
 			<div class="user-content">
 				<p>Обращаем внимание всех посетителей сайта и интернет магазина, что реализован очень удобный поиск по интернет магазину и по сайту отдельно. Достаточно в строке поиска ввести более 3-х букв названия того, что Вы ищете, и система предложит Вам наиболее подходящие запросы по Вашей теме. Строка поиска расположена во втором горизонтальном меню, справа, как указано на картинке. Попробуйте - Вам понравится умный поиск на нашем сайте!!!</p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/7Mk_omVy1zs" frameborder="0" allowfullscreen></iframe>
@@ -51,26 +49,6 @@
 					<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter"></div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-
-
-<section class="form-row-sec def-sec">
-	<div class="form-row container">
-		<div class="form-row__title">
-
-			<p class="h1"><img src="img/icons/mail-subscribe.svg" alt="">Узнавайте обо всем первыми!</p>
-		</div>
-		<div class="form-row__subscribe">
-			<form class="subscribe-form">
-				<input class="input-text" type="email" placeholder="Введите ваш e-mail" name="subscribe-mail">
-				<button class="btn">Подписаться на рассылку<i class="i-right"></i></button>
-				<label class="style-checkbox">
-					<input type="checkbox" checked name="personal-info-agree">
-					<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.</span>
-				</label>
-			</form>
 		</div>
 	</div>
 </section>

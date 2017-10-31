@@ -269,6 +269,18 @@ $('.detail__gallery').slick({
 
 
 /***********************
+FitVid BEGIN
+***********************/
+$(document).ready(function(){
+	// Target your .container, .wrapper, .post, etc.
+	$(".user-content").fitVids();
+});
+/***********************
+FitVid END
+***********************/
+
+
+/***********************
 Input mask BEGIN
 ***********************/
 $(function($){
