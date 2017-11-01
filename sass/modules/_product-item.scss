@@ -10,6 +10,9 @@
 	box-shadow: 0 4px 20px transparentize($orange, 1);
 	transition: all 0.3s ease;
 	background: #fff;
+	@include res(l) {
+		margin-top: 6px;
+	}
 
 	&:hover {
 		box-shadow: 0 4px 20px 0 transparentize($orange, 0.65);

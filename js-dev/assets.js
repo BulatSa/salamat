@@ -3,3 +3,4 @@
 //@prepros-append vendors/slick.min.js
 //@prepros-append vendors/device.min.js
 //@prepros-append vendors/jquery.fitvids.js
+//@prepros-append vendors/masonry.pkgd.min.js

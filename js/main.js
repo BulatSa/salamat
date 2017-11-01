@@ -83,7 +83,10 @@ function subMenuPosition() {
 	});
 }
 
-subMenuPosition();
+
+$(document).ready(function(){
+	subMenuPosition();
+});
 
 $(window).on('resize', function(){
 	subMenuPosition();
@@ -177,8 +180,8 @@ $('#offers-special').slick({
 	slidesToScroll: 4,
 	lazyLoad: 'progressive',
 	infinite: false,
-	nextArrow: '#offers-special-nav .i-nav-right',
-	prevArrow: '#offers-special-nav .i-nav-left',
+	prevArrow: "<button type='button' class='slick-prev'></button>",
+	nextArrow: "<button type='button' class='slick-next'></button>",
 	responsive: [
 		{
 			breakpoint: 1040,
@@ -210,8 +213,8 @@ $('#offers-new').slick({
 	slidesToScroll: 4,
 	infinite: false,
 	lazyLoad: 'progressive',
-	nextArrow: '#offers-new-nav .i-nav-right',
-	prevArrow: '#offers-new-nav .i-nav-left',
+	prevArrow: "<button type='button' class='slick-prev'></button>",
+	nextArrow: "<button type='button' class='slick-next'></button>",
 	responsive: [
 		{
 			breakpoint: 1040,
@@ -265,6 +268,19 @@ $('.detail__gallery').slick({
 });
 /***********************
  Slick END
+***********************/
+
+
+/***********************
+Masonry BEGIN
+***********************/
+$(document).ready(function(){
+	$('.masonry-grid').masonry({
+		// options...
+	});
+});
+/***********************
+Masonry END
 ***********************/
 
 

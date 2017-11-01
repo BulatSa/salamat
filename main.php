@@ -185,13 +185,13 @@
 	<div class="container">
 		<div class="offers-row-title">
 			<a href="#" class="h1">Новинки</a>
-			<div id="offers-new-nav" class="offers-nav">
-				<i class="i-nav-left"></i>
-				<i class="i-nav-right"></i>
-			</div>
+<!--			<div id="offers-new-nav" class="offers-nav">-->
+<!--				<i class="i-nav-left"></i>-->
+<!--				<i class="i-nav-right"></i>-->
+<!--			</div>-->
 		</div>
-		<div class="offers-row row" id="offers-new">
-			<div class="grid-3 grid-4_m">
+		<div class="offers-row row salamat-slider" id="offers-new">
+			<div class="grid-3 grid-4_m salamat-slide">
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
@@ -222,7 +222,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid-3 grid-4_m">
+			<div class="grid-3 grid-4_m salamat-slide">
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
@@ -253,7 +253,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid-3 grid-4_m">
+			<div class="grid-3 grid-4_m salamat-slide">
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
@@ -284,7 +284,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid-3 grid-4_m">
+			<div class="grid-3 grid-4_m salamat-slide">
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
@@ -315,7 +315,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid-3 grid-4_m">
+			<div class="grid-3 grid-4_m salamat-slide">
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
@@ -346,7 +346,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid-3 grid-4_m">
+			<div class="grid-3 grid-4_m salamat-slide">
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
@@ -377,7 +377,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid-3 grid-4_m">
+			<div class="grid-3 grid-4_m salamat-slide">
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
@@ -408,7 +408,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid-3 grid-4_m">
+			<div class="grid-3 grid-4_m salamat-slide">
 				<div class="product-item">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
@@ -447,14 +447,14 @@
 	<div class="container">
 		<div class="offers-row-title">
 			<a href="#" class="h1">Специальные предложения</a>
-			<div id="offers-special-nav" class="offers-nav">
-				<i class="i-nav-left"></i>
-				<i class="i-nav-right"></i>
-			</div>
+<!--			<div id="offers-special-nav" class="offers-nav">-->
+<!--				<i class="i-nav-left"></i>-->
+<!--				<i class="i-nav-right"></i>-->
+<!--			</div>-->
 		</div>
-		<div class="offers-row row" id="offers-special">
+		<div class="offers-row row salamat-slider" id="offers-special">
 			<div class="grid-3 grid-4_m">
-				<div class="product-item">
+				<div class="product-item salamat-slide">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
 							<img data-lazy="img/offer-item-1.jpg" alt="">
@@ -490,7 +490,7 @@
 				</div>
 			</div>
 			<div class="grid-3 grid-4_m">
-				<div class="product-item">
+				<div class="product-item salamat-slide">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
 							<img data-lazy="img/offer-item-1.jpg" alt="">
@@ -526,7 +526,7 @@
 				</div>
 			</div>
 			<div class="grid-3 grid-4_m">
-				<div class="product-item">
+				<div class="product-item salamat-slide">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
 							<img data-lazy="img/offer-item-1.jpg" alt="">
@@ -562,7 +562,7 @@
 				</div>
 			</div>
 			<div class="grid-3 grid-4_m">
-				<div class="product-item">
+				<div class="product-item salamat-slide">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
 							<img data-lazy="img/offer-item-1.jpg" alt="">
@@ -598,7 +598,7 @@
 				</div>
 			</div>
 			<div class="grid-3 grid-4_m">
-				<div class="product-item">
+				<div class="product-item salamat-slide">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
 							<img data-lazy="img/offer-item-1.jpg" alt="">
@@ -634,7 +634,7 @@
 				</div>
 			</div>
 			<div class="grid-3 grid-4_m">
-				<div class="product-item">
+				<div class="product-item salamat-slide">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
 							<img data-lazy="img/offer-item-1.jpg" alt="">
@@ -670,7 +670,7 @@
 				</div>
 			</div>
 			<div class="grid-3 grid-4_m">
-				<div class="product-item">
+				<div class="product-item salamat-slide">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
 							<img data-lazy="img/offer-item-1.jpg" alt="">
@@ -706,7 +706,7 @@
 				</div>
 			</div>
 			<div class="grid-3 grid-4_m">
-				<div class="product-item">
+				<div class="product-item salamat-slide">
 					<a href="#" class="product-item__link" title="Full Name">
 						<div class="product-item__img">
 							<img data-lazy="img/offer-item-1.jpg" alt="">
@@ -842,14 +842,18 @@
 						<div class="user-content user-content--mini">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut, cum! Accusantium aliquam atque autem deleniti dignissimos dolores ducimus enim nostrum odio officiis placeat, provident sapiente sequi tempore ullam velit!</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-							<b>Наталья, Москва</b>
+						</div>
+						<div class="review-about">
+							<p class="review-about__name">Наталья, Москва</p>
 						</div>
 					</div>
 					<div class="review-text">
 						<div class="user-content user-content--mini">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut, cum! Accusantium aliquam atque autem deleniti dignissimos dolores ducimus enim nostrum odio officiis placeat, provident sapiente sequi tempore ullam velit!</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-							<b>Наталья, Москва</b>
+						</div>
+						<div class="review-about">
+							<p class="review-about__name">Наталья, Москва</p>
 						</div>
 					</div>
 				</div>

@@ -2,7 +2,7 @@
 
 .more-info {
 	padding-top: $pad-xxs;
-	a.h2 {
+	a.h1 {
 		display: inline-block;
 		transition: all 0.3s ease;
 		&:hover {
@@ -13,7 +13,26 @@
 
 .more-info__news {
 	padding-right: 5%;
+	@include res(m) {
+		margin-bottom:$pad-s;
+	}
 	@include res(s) {
+		margin-bottom:$pad-xs;
 		padding-right: 0;
+	}
+}
+
+.more-info__sales {
+	@include res(m) {
+		margin-bottom:$pad-s;
+	}
+	@include res(s) {
+		margin-bottom:$pad-xs;
+	}
+}
+
+.more-info__reviews {
+	.review-text:last-child {
+		margin-bottom: 0;
 	}
 }

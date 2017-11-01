@@ -30,6 +30,10 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.i-arrow-play:before {
+	content: "\e910";
+	color: #fff;
+}
 .i-arrow-left:before {
 	content: "\e90e";
 }
