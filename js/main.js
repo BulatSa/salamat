@@ -275,12 +275,45 @@ $('.detail__gallery').slick({
 Masonry BEGIN
 ***********************/
 $(document).ready(function(){
-	$('.masonry-grid').masonry({
+	var $masonryGrid = $('.masonry-grid').masonry({
 		// options...
+	});
+	// layout Masonry after each image loads
+	$masonryGrid.imagesLoaded().progress(function(){
+		$masonryGrid.masonry('layout');
 	});
 });
 /***********************
 Masonry END
+***********************/
+
+
+/***********************
+Faq BEGIN
+***********************/
+$(document).ready(function(){
+	$('.faq__item-questions').slideUp();
+	$('.faq__item-question-link').next('.user-content').slideUp();
+	$('.faq__item-title').on('click', function(){
+		$('.faq__item-title').not($(this)).closest('.faq__item').removeClass('active');
+		$('.faq__item-title').not($(this)).next('.faq__item-questions').slideUp();
+		$('.faq__item-title').not($(this)).removeClass('active');
+
+		$(this).closest('.faq__item').toggleClass('active');
+		$(this).toggleClass('active');
+		$(this).next('.faq__item-questions').slideToggle();
+	});
+	$('.faq__item-question-link').on('click', function (e) {
+		e.preventDefault();
+		$('.faq__item-question-link').not($(this)).next('.user-content').slideUp();
+		$('.faq__item-question-link').not($(this)).removeClass('active');
+
+		$(this).next('.user-content').slideToggle();
+		$(this).toggleClass('active');
+	});
+});
+/***********************
+Faq END
 ***********************/
 
 

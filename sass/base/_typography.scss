@@ -4,6 +4,7 @@ body{
 	font-weight: 400;
 	line-height: 1.4;
 	color: $black;
+	hyphens: auto;
 }
 
 a{
@@ -152,6 +153,43 @@ h4, .h4 {
 				border-color: transparent;
 			}
 		}
+	}
+	img {
+		display: inline-block;
+		margin-bottom: $pad-xs;
+		max-width: 100%;
+		@include res(s) {
+			margin-bottom: $pad-xxs;
+		}
+	}
+	ul {
+		list-style: none;
+		&:last-child {
+			li:last-child {
+				padding-bottom: 0;
+			}
+		}
+		li {
+			position: relative;
+			padding-left: $pad-xs;
+			padding-bottom: $pad-xxs;
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0.45em;
+				width: 10px;
+				height: 10px;
+				border-radius: 50% 0 50% 50%;
+				background: $green;
+			}
+		}
+	}
+	h1, h4 {
+		color: #233647;
+	}
+	h2, h3 {
+		color: #111b24;
 	}
 	.fluid-width-video-wrapper {
 		margin-top: $pad-s;

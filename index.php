@@ -11,5 +11,8 @@
 		<li><a href="/news.php">Новости</a></li>
 		<li><a href="/news-detail.php">Страница Новости</a></li>
 		<li><a href="/template-page.php">Станица Шаблонная</a></li>
+		<br>
+		<li><a href="/faq.php">FAQ</a></li>
+		<li><a href="/certificate.php">Сертификаты</a></li>
 	</ul>
 </section>

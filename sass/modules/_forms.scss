@@ -78,7 +78,64 @@ button {
 	}
 }
 
-.input-text {
+.form-row__halfed {
+	.ajax-form {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	.form-row__col-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: $pad-xs;
+		padding-bottom: $pad-xs;
+		@include res(l) {
+			padding-top: $pad-xxs;
+		}
+		@include res(xs) {
+			padding-top: 0;
+			padding-bottom: $pad-xxs;
+		}
+	}
+	.form-row__col {
+		width: 50%;
+		@include res(xs) {
+			width: 100%;
+		}
+	}
+	.btn-center {
+		padding-top: $pad-xxs;
+		@include res(s) {
+			padding-top: 0;
+		}
+	}
+	input {
+		width: calc(100% - 15px);
+		@include res(xs) {
+			width: 100%;
+		}
+		&:last-child {
+			margin-bottom: 0;
+			@include res(xs) {
+				margin-bottom: 0.8em;
+			}
+		}
+	}
+	textarea {
+		width: 50%;
+		@include res(xs) {
+			width: 100%;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.form-row__col-wrap {}
+
+.form-row__col {}
+
+.input-text, .input-textarea {
 	display: inline-block;
 	margin-bottom: 1em;
 	padding: 12px 20px 14px 22px;
@@ -122,6 +179,10 @@ button {
 			color: #cc0000;
 		}
 	}
+}
+
+textarea {
+	resize: vertical;
 }
 
 .input-search {

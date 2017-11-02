@@ -244,18 +244,24 @@
 		</div>
 		<div class="form-row__halfed">
 			<form class="ajax-form">
-				<div class="form-row__col">
-					<input class="input-text" type="text" placeholder="Введите имя*" name="mail" data-req="true">
-					<input class="input-text" type="tel" placeholder="Введите ваш e-mail*" name="mail" data-req="true">
-					<input class="input-text" type="text" placeholder="Введите город*" name="mail" data-req="true">
-					<input class="input-text" type="email" placeholder="Введите e-mail" name="mail">
+				<div class="form-row__col-wrap">
+					<div class="form-row__col">
+						<input class="input-text" type="text" placeholder="Введите имя*" name="mail" data-req="true">
+						<input class="input-text" type="tel" placeholder="Введите ваш e-mail*" name="mail" data-req="true">
+						<input class="input-text" type="text" placeholder="Введите город*" name="mail" data-req="true">
+						<input class="input-text" type="email" placeholder="Введите e-mail" name="mail">
+					</div>
+
+					<textarea class="input-textarea" name="review-text" placeholder="Ваш отзыв*" data-req="true"></textarea>
 				</div>
 
 				<label class="style-checkbox">
 					<input type="checkbox" checked name="personal-info-agree" data-req="true">
 					<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.</span>
 				</label>
-				<button class="btn">Подписаться на рассылку<i class="i-right"></i></button>
+				<div class="btn-center">
+					<button class="btn">Отправить отзыв<i class="i-right"></i></button>
+				</div>
 			</form>
 		</div>
 	</div>
