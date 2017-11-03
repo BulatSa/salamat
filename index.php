@@ -14,5 +14,8 @@
 		<br>
 		<li><a href="/faq.php">FAQ</a></li>
 		<li><a href="/certificate.php">Сертификаты</a></li>
+		<br>
+		<li><a href="/refund.php">Обмен и возврат</a></li>
+		<li><a href="/payment.php">Способы оплаты</a></li>
 	</ul>
 </section>

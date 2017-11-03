@@ -185,6 +185,29 @@ h4, .h4 {
 			}
 		}
 	}
+	blockquote {
+		display: block;
+		padding-left: $pad-xs;
+		margin-bottom: 1em;
+		border-left: 2px solid $green;
+		font-family: $font-head;
+		font-size: 16px;
+		line-height:1.5;
+		color: #000;
+		@include res(l) {
+			font-size: 15px;
+		}
+		@include res(m) {
+			padding-left: $pad-xxs;
+		}
+		@include res(s) {
+			padding-left: $pad-xxs;
+			font-size: 14px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 	h1, h4 {
 		color: #233647;
 	}

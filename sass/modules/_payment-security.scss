@@ -1,0 +1,26 @@
+.payment-security-sec {}
+
+.payment-security {
+	position: relative;
+	min-height: 800px;
+	margin-bottom: $pad-s;
+	padding: $pad-xl $pad-s;
+	border-radius: 10px;
+	overflow: hidden;
+	background: url('../img/payment/bg-payment-security.jpg') no-repeat center bottom;
+	background-size: cover;
+	@include res(l) {
+		min-height: initial;
+		margin-bottom: $pad-xs;
+		padding: $pad-l $pad-s;
+		background: url('../img/payment/bg-payment-security.jpg') no-repeat 40% 100%;
+	}
+	@include res(m) {
+		padding: $pad-m $pad-xs;
+		background: #f2f5f7;
+	}
+	@include res(s) {
+		margin-bottom: 0;
+		padding: $pad-xs $pad-xxs;
+	}
+}

@@ -86,10 +86,16 @@ function subMenuPosition() {
 
 $(document).ready(function(){
 	subMenuPosition();
+	setTimeout(function(){
+		subMenuPosition();
+	}, 500);
 });
 
 $(window).on('resize', function(){
 	subMenuPosition();
+	setTimeout(function(){
+		subMenuPosition();
+	}, 100);
 });
 
 

@@ -1,3 +1,20 @@
+.breadcrumbs-sec {
+	position: relative;
+	z-index: 1;
+	&+.big-slider-sec {
+		margin-top: -92px;
+		@include res(l) {
+			margin-top: -72px;
+		}
+		@include res(m) {
+			margin-top: -57px;
+		}
+		@include res(s) {
+			margin-top: -42px;
+		}
+	}
+}
+
 .breadcrumbs {
 	padding-top: 45px;
 	padding-bottom: 25px;
