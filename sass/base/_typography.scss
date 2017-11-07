@@ -184,6 +184,71 @@ h4, .h4 {
 				background: $green;
 			}
 		}
+		&.good {
+			li {
+				position: relative;
+				padding-left: $pad-s;
+				padding-bottom: $pad-xxs;
+				@include res(s) {
+					padding-left: $pad-xs;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0.45em;
+					width: 15px;
+					height: 8px;
+					border-left: 2px solid $green;
+					border-bottom: 2px solid $green;
+					border-radius: 0 0 0 3px;
+					transform: rotate(-45deg);
+					background: none;
+					@include res(s) {
+						width: 12px;
+						height: 6px;
+					}
+				}
+			}
+		}
+		&.bad {
+			li {
+				position: relative;
+				padding-left: $pad-s;
+				padding-bottom: $pad-xxs;
+				@include res(s) {
+					padding-left: $pad-xs;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0.6em;
+					width: 15px;
+					height: 2px;
+					border-radius: 3px;
+					transform: rotate(-45deg);
+					background: #ea1a3e;
+					@include res(s) {
+						width: 12px;
+					}
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0.6em;
+					width: 15px;
+					height: 2px;
+					border-radius: 3px;
+					transform: rotate(45deg);
+					background: #ea1a3e;
+					@include res(s) {
+						width: 12px;
+					}
+				}
+			}
+		}
 	}
 	blockquote {
 		display: block;

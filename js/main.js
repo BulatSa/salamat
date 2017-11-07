@@ -272,6 +272,39 @@ $('.detail__gallery').slick({
 		}
 	]
 });
+
+$('.sertificats__list').slick({
+	adaptiveHeight: true,
+	slidesToShow: 6,
+	slidesToScroll: 6,
+	infinite: false,
+	lazyLoad: 'progressive',
+	prevArrow: "<button type='button' class='slick-prev'></button>",
+	nextArrow: "<button type='button' class='slick-next'></button>",
+	responsive: [
+		{
+			breakpoint: 1040,
+			settings: {
+				slidesToShow: 5,
+				slidesToScroll: 5
+			}
+		},
+		{
+			breakpoint: 680,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
+});
 /***********************
  Slick END
 ***********************/

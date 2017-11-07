@@ -1,0 +1,71 @@
+.sertificats-sec {
+	background: $gray-bg;
+}
+
+.sertificats {}
+
+.sertificats__list {
+	padding-top: $pad-xxs;
+	.slick-arrow {
+		top: 40%;
+		@include res(m) {
+			top: 33%;
+		}
+		@include res(s) {
+			top: 40%;
+		}
+	}
+	.salamat-slide {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.sertificats__item {
+	display: inline-block;
+	max-width: 226px;
+}
+
+.sertificats__item-img {
+	position: relative;
+	display: block;
+	padding: 25px 27px;
+	background: url('../../img/sertificat-bord.jpg') no-repeat top center;
+	background-size: 100% 100%;
+	@include res(l) {
+		padding: 20px 21px;
+	}
+	@include res(l) {
+		padding: 15px 21px;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		width: 90%;
+		height: 40px;
+		border-radius: 30%;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+		background: #FFF;
+		transform: translate(-50%);
+		z-index: -1;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+.sertificats__item-text {
+	display: inline-block;
+	padding-top: $pad-xxs;
+	font-size: 18px;
+	line-height:1.2;
+	@include res(l) {
+		font-size: 16px;
+	}
+	@include res(s) {
+		font-size: 14px;
+	}
+}
