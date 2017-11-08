@@ -4,6 +4,7 @@
 
 @import 'vendors/fancybox';
 @import 'vendors/slick';
+@import 'vendors/nice-select';
 
 @import 'base/reset';
 @import 'base/fonts';
@@ -34,6 +35,11 @@
 @import 'modules/about-info';
 @import 'modules/payment-security';
 @import 'modules/sertificats';
+@import 'modules/firms-manufactures';
+@import 'modules/provider-benefits';
+@import 'modules/about-company';
+@import 'modules/company-facts';
+@import 'modules/geo-partners';
 
 @import 'pages/home';
 @import 'pages/news';

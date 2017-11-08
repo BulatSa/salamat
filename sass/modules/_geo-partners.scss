@@ -1,0 +1,77 @@
+.geo-partners-sec {}
+
+.geo-partners {
+	min-height: 740px;
+	background: url('../img/provider/bg-geo-partners.jpg') no-repeat left bottom;
+	@include res(xl) {
+		background-position: bottom right;
+	}
+	@include res(m) {
+		min-height: initial;
+		padding-bottom: 380px;
+		background-size: 100% auto;
+	}
+	@include res(s) {
+		background-size: 120% auto;
+	}
+	@include res(xs) {
+		padding-bottom: 0;
+		background: none;
+	}
+	.btn {
+		position: absolute;
+		bottom: 10px;
+		left: 15px;
+		@include res(l) {
+			bottom: 40px;
+		}
+		@include res(m) {
+			bottom: 20px;
+		}
+		@include res(xs) {
+			position: relative;
+			left: initial;
+			bottom: initial;
+			margin-top: $pad-xs;
+		}
+	}
+}
+
+.geo-partners__info {
+	max-width: 550px;
+}
+
+.geo-partners__man-name {
+	position: absolute;
+	top: 110px;
+	right: 0;
+	max-width: 170px;
+	font-size: 14px;
+	color: #b3b3b3;
+	@include res(xl) {
+		right: 290px;
+	}
+	@include res(l) {
+		top: 630px;
+		right: 350px;
+	}
+	@include res(m) {
+		top: initial;
+		bottom: 20px;
+		right: 100px;
+	}
+	@include res(xs) {
+		display: none;
+	}
+	span {
+		display: block;
+		font-size: 18px;
+		color: #111b24;
+		@include res(l) {
+			font-size: 16px;
+		}
+		@include res(s) {
+			font-size: 14px;
+		}
+	}
+}

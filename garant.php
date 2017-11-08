@@ -26,12 +26,60 @@
 </section>
 
 
+<section class="firms-manufactures-sec def-sec-top">
+	<div class="firms-manufactures container">
+		<h2>Фирмы–производители</h2>
+		<div class="firms-manufactures__list salamat-slider">
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-1.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-2.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-3.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-4.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-5.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-6.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-7.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-8.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-9.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-6.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-7.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-8.jpg" alt="">
+			</div>
+			<div class="firms-manufactures__item salamat-slide">
+				<img src="img/manufactures/manufacture-9.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+
 <section class="about-info-sec def-sec">
 	<div class="container about-info">
 		<div class="row">
 			<div class="grid-6 grid-12_s">
 				<div class="about-info__block">
-					<p class="about-info__block-title h2"><img src="img/icons/garant-check.svg" alt="">Для оформления гарантии</p>
+					<p class="about-info__block-title h2"><img src="img/icons/garant-check.svg" alt=""><span>Для оформления гарантии</span></p>
 					<div class="user-content">
 						<ul class="good">
 							<li>Правильно и без помарок и исправлений заполненный гарантийный талон, в котором должны быть указаны модель и серийный номер изделия, дата продажи и печать торгующей организации;</li>
@@ -44,7 +92,7 @@
 			</div>
 			<div class="grid-6 grid-12_s">
 				<div class="about-info__block">
-					<p class="about-info__block-title h2"><img src="img/icons/garant-perfomance.svg" alt="">Гарантия не осуществляется:</p>
+					<p class="about-info__block-title h2"><img src="img/icons/garant-perfomance.svg" alt=""><span>Гарантия не осуществляется:</span></p>
 					<div class="user-content">
 						<ul class="bad">
 							<li>Утерян или не заполнен гарантийный талон</li>

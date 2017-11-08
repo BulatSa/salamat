@@ -1,0 +1,72 @@
+.company-facts-sec {
+	padding-top: $pad-s;
+	padding-bottom: $pad-s;
+	background: #21e7c6;
+	@include res(s) {
+		padding-top: $pad-xs;
+		padding-bottom: $pad-xxs;
+	}
+}
+
+.company-facts {}
+
+.company-facts__list {
+	display: flex;
+	justify-content: center;
+	@include res(xs) {
+		flex-wrap: wrap;
+	}
+}
+
+.company-facts__item {
+	max-width: 300px;
+	padding-left: 50px;
+	padding-right: 50px;
+	@include res(l) {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	@include res(m) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	@include res(s) {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: $pad-xs;
+	}
+	@include res(xs) {
+		width: 50%;
+		padding-left: 0;
+	}
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+	span {
+		display: block;
+		font-family: $font-head;
+		font-weight: 600;
+		font-size: 32px;
+		@include res(l) {
+			font-size: 28px;
+		}
+		@include res(m) {
+			font-size: 24px;
+		}
+		@include res(s) {
+			font-size: 20px;
+		}
+		@include res(xs) {
+			font-size: 18px;
+		}
+	}
+	p {
+		font-size: 16px;
+		@include res(s) {
+			font-size: 14px;
+		}
+	}
+}

@@ -292,15 +292,55 @@ $('.sertificats__list').slick({
 		{
 			breakpoint: 680,
 			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
+				slidesToShow: 3,
+				slidesToScroll: 3
 			}
 		},
 		{
 			breakpoint: 480,
 			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		}
+	]
+});
+
+$('.firms-manufactures__list').slick({
+	adaptiveHeight: true,
+	slidesToShow: 9,
+	slidesToScroll: 9,
+	infinite: false,
+	lazyLoad: 'progressive',
+	prevArrow: "<button type='button' class='slick-prev'></button>",
+	nextArrow: "<button type='button' class='slick-next'></button>",
+	responsive: [
+		{
+			breakpoint: 1040,
+			settings: {
+				slidesToShow: 6,
+				slidesToScroll: 6
+			}
+		},
+		{
+			breakpoint: 680,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 4
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3
+			}
+		},
+		{
+			breakpoint: 360,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
 			}
 		}
 	]
@@ -365,6 +405,17 @@ $(document).ready(function(){
 });
 /***********************
 FitVid END
+***********************/
+
+
+/***********************
+NiceSelect BEGIN
+***********************/
+$(document).ready(function() {
+	$('select').niceSelect();
+});
+/***********************
+NiceSelect END
 ***********************/
 
 

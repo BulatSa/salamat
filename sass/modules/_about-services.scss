@@ -2,19 +2,15 @@
 
 .about-services {}
 
-.about-services__benefits {
-	padding-bottom: $pad-m;
-	@include res(l) {
-		padding-bottom: $pad-xs;
-	}
-	@include res(s) {
-		padding-bottom: $pad-xxs;
-	}
-}
+.about-services__benefits {}
 
 .about-services__benefit {
 	display: flex;
 	align-items: flex-start;
+	padding-bottom: $pad-m;
+	@include res(l) {
+		padding-bottom: $pad-xs;
+	}
 	@include res(m) {
 		flex-wrap: wrap;
 		padding-bottom: $pad-xs;

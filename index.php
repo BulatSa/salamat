@@ -18,5 +18,6 @@
 		<li><a href="/refund.php">Обмен и возврат</a></li>
 		<li><a href="/payment.php">Способы оплаты</a></li>
 		<li><a href="/garant.php">Гарантия качества</a></li>
+		<li><a href="/provider.php">Поставщикам</a></li>
 	</ul>
 </section>

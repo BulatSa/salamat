@@ -32,11 +32,17 @@
 	padding: 25px 27px;
 	background: url('../../img/sertificat-bord.jpg') no-repeat top center;
 	background-size: 100% 100%;
+	@include res(xl) {
+		padding: 24px 25px;
+	}
 	@include res(l) {
 		padding: 20px 21px;
 	}
 	@include res(l) {
 		padding: 15px 21px;
+	}
+	@include res(m) {
+		padding: 13px 15px;
 	}
 	&:after {
 		content: '';
@@ -54,6 +60,7 @@
 	img {
 		display: block;
 		max-width: 100%;
+		margin: 0 auto;
 	}
 }
 

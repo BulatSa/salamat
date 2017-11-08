@@ -43,7 +43,7 @@
 		<div class="row">
 			<div class="grid-6 grid-12_s about-info__block-wrap">
 				<div class="about-info__block">
-					<p class="about-info__block-title h2"><img src="img/icons/payment-cash.svg" alt="">1. Наличными</p>
+					<p class="about-info__block-title h2"><img src="img/icons/payment-cash.svg" alt=""><span>1. Наличными</span></p>
 					<div class="user-content">
 						<p>Оплата заказа после примерки наличными, возможна во всех пунктах самовывоза и курьерам во всех регионах</p>
 					</div>
@@ -51,7 +51,7 @@
 			</div>
 			<div class="grid-6 grid-12_s about-info__block-wrap">
 				<div class="about-info__block">
-					<p class="about-info__block-title h2"><img src="img/icons/payment-bank.svg" alt="">2. Банковская карта</p>
+					<p class="about-info__block-title h2"><img src="img/icons/payment-bank.svg" alt=""><span>2. Банковская карта</span></p>
 					<div class="user-content">
 						<p>Оплата банковской картой, возможна через системы электронных платежей.</p>
 						<blockquote>
@@ -64,7 +64,7 @@
 
 			<div class="grid-6 grid-12_s about-info__block-wrap">
 				<div class="about-info__block">
-					<p class="about-info__block-title h2"><img src="img/icons/payment-web.svg" alt="">3. Электронные платежи</p>
+					<p class="about-info__block-title h2"><img src="img/icons/payment-web.svg" alt=""><span>3. Электронные платежи</span></p>
 					<div class="user-content">
 						<p>Оплата заказа после примерки наличными, возможна во всех пунктах самовывоза и курьерам во всех регионах</p>
 					</div>
@@ -78,7 +78,7 @@
 			</div>
 			<div class="grid-6 grid-12_s about-info__block-wrap">
 				<div class="about-info__block">
-					<p class="about-info__block-title h2"><img src="img/icons/payment-saw.svg" alt="">4. Для юридических лиц</p>
+					<p class="about-info__block-title h2"><img src="img/icons/payment-saw.svg" alt=""><span>4. Для юридических лиц</span></p>
 					<div class="user-content">
 						<p>Юридические лица оплачивают заказы только по безналичному расчету. Все необходимые для бухгалтерии документы выдаются вместе с заказом при получении. </p>
 						<blockquote>
