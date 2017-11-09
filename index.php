@@ -19,5 +19,6 @@
 		<li><a href="/payment.php">Способы оплаты</a></li>
 		<li><a href="/garant.php">Гарантия качества</a></li>
 		<li><a href="/provider.php">Поставщикам</a></li>
+		<li><a href="/company.php">О компании</a></li>
 	</ul>
 </section>

@@ -345,6 +345,32 @@ $('.firms-manufactures__list').slick({
 		}
 	]
 });
+
+$('.company-salons__list').slick({
+	adaptiveHeight: true,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	infinite: false,
+	lazyLoad: 'progressive',
+	prevArrow: "<button type='button' class='slick-prev'></button>",
+	nextArrow: "<button type='button' class='slick-next'></button>",
+	responsive: [
+		{
+			breakpoint: 680,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		},
+	]
+});
 /***********************
  Slick END
 ***********************/
@@ -412,7 +438,9 @@ FitVid END
 NiceSelect BEGIN
 ***********************/
 $(document).ready(function() {
-	$('select').niceSelect();
+	if($('select').length) {
+		$('select').niceSelect();
+	}
 });
 /***********************
 NiceSelect END
@@ -422,8 +450,10 @@ NiceSelect END
 /***********************
 Input mask BEGIN
 ***********************/
-$(function($){
-	$("input[type='tel']").mask("+7 (999) 999-99-99");
+$(document).ready(function() {
+	$(function($){
+		$("input[type='tel']").mask("+7 (999) 999-99-99");
+	});
 });
 /***********************
 Input mask END
@@ -508,3 +538,35 @@ $(document).ready(function(){
 /***********************
  Прокрутка к секциям END
  ***********************/
+
+
+/***********************
+Custom Input File BEGIN
+***********************/
+$(document).ready(function(){
+	if($('.inputfile').length) {
+		var inputs = document.querySelectorAll( '.inputfile' );
+		Array.prototype.forEach.call( inputs, function( input )
+		{
+			var label	 = input.nextElementSibling,
+				labelVal = label.innerHTML;
+
+			input.addEventListener( 'change', function( e )
+			{
+				var fileName = '';
+				if( this.files && this.files.length > 1 )
+					fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+				else
+					fileName = e.target.value.split( '\\' ).pop();
+
+				if( fileName )
+					label.querySelector( 'span' ).innerHTML = fileName;
+				else
+					label.innerHTML = labelVal;
+			});
+		});
+	}
+});
+/***********************
+Custom Input File END
+***********************/

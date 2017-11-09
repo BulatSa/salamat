@@ -1,0 +1,48 @@
+.company-salons-sec {}
+
+.company-salons {}
+
+.company-salons__list {
+	padding-top: $pad-xs;
+	@include res(l) {
+		padding-top: 0;
+	}
+	.slick-arrow {
+		@include res(l) {
+			top: 41%;
+		}
+	}
+}
+
+.company-salons__item {
+	text-align: center;
+	a {
+		display: inline-block;
+		text-align: left;
+		&:hover {
+			img {
+				box-shadow: 0 4px 10px transparentize(#000, 0.85);
+			}
+		}
+	}
+	img {
+		max-width: 100%;
+		margin-bottom: $pad-xs;
+		border-radius: 6px;
+		border: 1px solid #e2e2e2;
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 10px transparentize(#000, 1);
+		@include res(m) {
+			margin-bottom: $pad-xxs;
+		}
+	}
+	span {
+		font-size: 18px;
+		@include res(l) {
+			font-size: 16px;
+		}
+		@include res(s) {
+			font-size: 14px;
+		}
+	}
+}

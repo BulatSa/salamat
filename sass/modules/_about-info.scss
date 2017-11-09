@@ -2,6 +2,14 @@
 
 .about-info {}
 
+.about-info__mini-title {
+	max-width: 550px;
+	padding-bottom: $pad-s;
+	@include res(l) {
+		padding-bottom: $pad-xs;
+	}
+}
+
 .about-info__block-wrap {
 	display: flex;
 }

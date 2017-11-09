@@ -1,5 +1,39 @@
 .about-company-sec {
 	background: $gray-bg;
+	&--bg {
+		background: url('../img/company/bg-company-facts.jpg') no-repeat center bottom;
+		@include res(m) {
+			background: $gray-bg;
+		}
+		.about-company__info {
+			padding-top: $pad-m;
+			padding-bottom: 200px;
+			@include res(l) {
+				padding-top: $pad-xs;
+			}
+			@include res(m) {
+				padding-top: 0;
+				padding-bottom: $pad-xs;
+			}
+		}
+		.company-facts__list {
+			position: absolute;
+			bottom: 40px;
+			left: 50%;
+			width: calc(100% - 26px);
+			transform: translateX(-50%);
+			@include res(m) {
+				position: relative;
+				bottom: initial;
+				left:initial;
+				width: 100%;
+				padding-top: $pad-xs;
+				padding-bottom: $pad-xxs;
+				transform: none;
+				background: #21e7c6;
+			}
+		}
+	}
 }
 
 .about-company {}

@@ -1,5 +1,8 @@
 .sertificats-sec {
 	background: $gray-bg;
+	&+.footer-sec {
+		margin-top: 0;
+	}
 }
 
 .sertificats {}

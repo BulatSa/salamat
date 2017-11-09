@@ -39,6 +39,20 @@
 			font-size: 12px;
 		}
 	}
+	&--white {
+		border: 1px solid #a3a3a3;
+		color: #a3a3a3;
+		background-color: #fff;
+		&:hover,&:focus {
+			outline: none;
+			color: #fff;
+			border-color: $green;
+			background-color: $green;
+		}
+	}
+	&--mini {
+		font-size: 14px;
+	}
 }
 
 button::-moz-focus-inner {

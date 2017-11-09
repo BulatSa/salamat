@@ -218,6 +218,12 @@
 					<input type="checkbox" checked name="personal-info-agree" data-req="true">
 					<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.</span>
 				</label>
+
+				<div class="inputfile-wrap">
+					<input type="file" name="file" id="file" class="inputfile">
+					<label for="file"><p>Прикрепить коммерческое предложение (формат word, pdf, pptx, ppt, exel)</p><span class="btn btn--white btn--mini">Обзор<i class="i-right"></i></span></label>
+				</div>
+
 				<div class="btn-center">
 					<button class="btn">Отправить вопрос<i class="i-right"></i></button>
 				</div>

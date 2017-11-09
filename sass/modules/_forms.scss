@@ -223,6 +223,45 @@ textarea {
 	}
 }
 
+
+.inputfile-wrap {
+	position: relative;
+	display: flex;
+	label {
+		margin-bottom: 1.5em;
+	}
+	p {
+		display: inline-block;
+		padding-right: 15px;
+	}
+}
+
+.inputfile {
+	position: absolute;
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	z-index: -1;
+	&+label {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		font-size: 14px;
+		color: #5f6c77;
+		cursor: pointer;
+	}
+	&:focus + label, & + label:hover {
+		.btn {
+			outline: none;
+			color: #fff;
+			border-color: $green;
+			background-color: $green;
+		}
+	}
+}
+
 //style-checkbox
 .style-checkbox{
 	display: block;
