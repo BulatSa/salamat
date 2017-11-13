@@ -1,0 +1,45 @@
+.registration-sec {}
+
+.registration {
+	padding-top: $pad-xs;
+}
+
+.registration__form {
+	max-width: 530px;
+	padding: $pad-s $pad-xs;
+	border: 1px solid #e2e2e2;
+	border-radius: 10px;
+	@include res(s) {
+		margin-bottom:$pad-s;
+		padding: $pad-xs $pad-xxs;
+	}
+	form {
+		max-width: 350px;
+		margin: 0 auto;
+	}
+	input {
+		width: 100%;
+	}
+	label {
+		display: block;
+		span {
+			display: block;
+			margin-bottom: 5px;
+			padding-left: 22px;
+			font-size: 14px;
+			color: #b3b3b3;
+		}
+	}
+	button {
+		margin-top: $pad-xs;
+		@include res(s) {
+			margin-top: $pad-xxs;
+		}
+	}
+}
+
+.registration__form-title {
+	text-align: center;
+}
+
+.registration__info {}

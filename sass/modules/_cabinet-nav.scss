@@ -1,0 +1,36 @@
+.cabinet-nav-sec {
+	margin-bottom: $pad-s;
+	padding-top: $pad-xs;
+	padding-bottom: $pad-xxs;
+	box-shadow: 0 3px 5px 0 transparentize(#000, 0.85);
+	@include res(l) {
+		margin-bottom: $pad-xs;
+	}
+	@include res(s) {
+		margin-bottom: $pad-xxs;
+		padding-top: $pad-xxs;
+	}
+}
+
+.cabinet-nav {}
+
+.cabinet-nav__link {
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: $pad-xxs;
+	padding: 8px 25px 10px;
+	border-radius: 25px;
+	color: transparentize(#233647, 0.5);
+	transition: all 0.3s ease;
+	@include res(s) {
+		padding: 6px 18px 7px;
+		font-size: 14px;
+	}
+	&:hover {
+		color: $green;
+	}
+	&.active {
+		color: $green;
+		border: 1px solid $green;
+	}
+}

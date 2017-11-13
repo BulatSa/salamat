@@ -1,4 +1,13 @@
-label{cursor: pointer;}
+label{
+	position: relative;
+	cursor: pointer;
+	&+.h2, &+.h3 {
+		padding-top: $pad-xs;
+		@include res(s) {
+			padding-top: $pad-xxs;
+		}
+	}
+}
 
 button {
 	border: none;
@@ -179,6 +188,23 @@ button {
 			color: #cc0000;
 		}
 	}
+	&+.i-eye {
+		position: absolute;
+		//top: 50%;
+		bottom: 27px;
+		right: 15px;
+		padding: 5px;
+		cursor: pointer;
+		//transform: translateY(-50%);
+		z-index: 1;
+		@include res(l) {
+			bottom: 23px;
+		}
+		@include res(s) {
+			bottom: 18px;
+			right: 10px;
+		}
+	}
 }
 
 textarea {
@@ -261,6 +287,32 @@ textarea {
 		}
 	}
 }
+
+// Nice-Select
+.nice-select {
+	display: inline-block;
+	float: none;
+	margin-bottom: $pad-xs;
+	padding-right: 50px;
+	border-radius: 25px;
+	border-color: #a3a3a3;
+	&:after {
+		right: 20px;
+		width: 10px;
+		height: 10px;
+		margin-top: -7px;
+		border-color: #b5b5b5;
+	}
+	ul {
+		li {
+			padding-bottom: 0;
+			&:before {
+				content: none;
+			}
+		}
+	}
+}
+// Nice-Select
 
 //style-checkbox
 .style-checkbox{

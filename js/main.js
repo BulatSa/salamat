@@ -441,6 +441,30 @@ $(document).ready(function() {
 	if($('select').length) {
 		$('select').niceSelect();
 	}
+
+	if ($('.delivery-methods__item-more-list .delivery-methods__item-more').length) {
+		var deliveryMethodItem = $('.delivery-methods__item-more-list .delivery-methods__item-more');
+		deliveryMethodItem.hide();
+		deliveryMethodItem.eq(0).show();
+
+		$('select[data-name="delivery-courier"]').on('change', function(e){
+			var selectedValue = e.target.value;
+			deliveryMethodItem.slideUp(300);
+			deliveryMethodItem.filter('[data-value="'+selectedValue +'"]').slideDown(300);
+		});
+	}
+
+	if ($('.market-adress__item-wrap').length) {
+		var marketAdressItem = $('.market-adress__item-wrap');
+		marketAdressItem.hide();
+		marketAdressItem.eq(0).show();
+
+		$('select[data-adress-name="market-adress"]').on('change', function(e){
+			var selectedValue = e.target.value;
+			marketAdressItem.slideUp(300);
+			marketAdressItem.filter('[data-adress="'+selectedValue +'"]').slideDown(300);
+		});
+	}
 });
 /***********************
 NiceSelect END
@@ -454,7 +478,18 @@ $(document).ready(function() {
 	$(function($){
 		$("input[type='tel']").mask("+7 (999) 999-99-99");
 	});
+
+	if($("input[type='password']").length) {
+		$("input[type='password'] + i").on('mousedown touchstart', function(){
+			$(this).siblings('input').attr('type','text');
+		});
+		$("input[type='password'] + i").on('mouseup touchend', function(){
+			$(this).siblings('input').attr('type','password');
+		});
+	}
 });
+
+
 /***********************
 Input mask END
 ***********************/

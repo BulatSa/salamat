@@ -20,5 +20,10 @@
 		<li><a href="/garant.php">Гарантия качества</a></li>
 		<li><a href="/provider.php">Поставщикам</a></li>
 		<li><a href="/company.php">О компании</a></li>
+		<li><a href="/delivery.php">Доставка</a></li>
+		<li><a href="/adress.php">Адреса салонов</a></li>
+		<br>
+		<li><a href="/registration.php">Регистрация</a></li>
+		<li><a href="/profile.php">ЛК - Мой профиль</a></li>
 	</ul>
 </section>

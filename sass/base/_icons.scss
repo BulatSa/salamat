@@ -30,6 +30,18 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.i-mail:before {
+	content: "\e912";
+}
+.i-phone:before {
+	content: "\e913";
+}
+.i-clock:before {
+	content: "\e914";
+}
+.i-eye:before {
+	content: "\e911";
+}
 .i-arrow-play:before {
 	content: "\e910";
 	color: #fff;
