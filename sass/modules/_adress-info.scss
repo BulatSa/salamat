@@ -1,0 +1,128 @@
+.adress-info-sec {
+	padding-top: $pad-xxs;
+}
+
+.adress-info {}
+
+.adress-info__item {
+}
+
+.adress-info__item-text {
+	max-width: 550px;
+	padding-bottom: $pad-s;
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
+}
+
+.adress-info__item-img {
+	padding-bottom: $pad-xs;
+	@include res(s) {
+		padding-bottom: $pad-xxs;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		border-radius: 10px;
+		border: 1px solid #e2e2e2;
+	}
+}
+
+.adress-info__item-icons {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	@include res(s) {
+		font-size: 14px;
+	}
+	img {
+		flex-shrink: 0;
+		margin-right: 5px;
+		max-width: 100%;
+		@include res(s) {
+			max-width: 30px;
+		}
+	}
+}
+
+.adress-info__item-contact {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: $pad-s;
+	@include res(s) {
+		padding-top: $pad-xs;
+		padding-bottom: $pad-xs;
+	}
+	div {
+		width: 50%;
+	}
+}
+
+.adress-info__item-phone {
+	display: block;
+	margin-top: 10px;
+	font-size: 26px;
+	font-weight: bold;
+	@include res(l) {
+		font-size: 20px;
+	}
+	@include res(m) {
+		font-size: 16px;
+	}
+	@include res(s) {
+		font-size: 14px;
+	}
+}
+
+.adress-info__item-map {
+	margin-bottom: $pad-xs;
+	border-radius: 10px;
+	height: 440px;
+	overflow: hidden;
+	@include res(s) {
+		height: 320px;
+	}
+	@include res(xs) {
+		height: 300px;
+	}
+	#ya-map {
+		height: 100%;
+	}
+}
+
+.adress-info__item-transport-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.adress-info__item-transport {
+	display: flex;
+	align-items: center;
+	width: 33.33333%;
+	margin-bottom: $pad-xs;
+	padding-right: 15px;
+	font-size: 16px;
+	@include res(l) {
+		width: 50%;
+		font-size: 14px;
+	}
+	@include res(xs) {
+		margin-bottom: $pad-xxs;
+	}
+	img {
+		margin-right: 10px;
+		flex-shrink: 0;
+		@include res(s) {
+			max-width: 30px;
+		}
+		@include res(xs) {
+			max-width: 20px;
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&--full {
+		width: 100%;
+	}
+}

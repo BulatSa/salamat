@@ -22,8 +22,10 @@
 		<li><a href="/company.php">О компании</a></li>
 		<li><a href="/delivery.php">Доставка</a></li>
 		<li><a href="/adress.php">Адреса салонов</a></li>
+		<li><a href="/adress-inner.php">Адреса салонов - внутренняя</a></li>
 		<br>
 		<li><a href="/registration.php">Регистрация</a></li>
+		<li><a href="/enter.php">Вход</a></li>
 		<li><a href="/profile.php">ЛК - Мой профиль</a></li>
 	</ul>
 </section>

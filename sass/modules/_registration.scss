@@ -42,4 +42,49 @@
 	text-align: center;
 }
 
-.registration__info {}
+.registration__form-soc {
+	max-width: 350px;
+	margin: 0 auto;
+	p {
+		font-size: 14px;
+		color: #5f6c77;
+		text-align: center;
+	}
+}
+
+.registration__form-enter-btns {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: $pad-xs;
+	@include res(s) {
+		padding-top: $pad-xxs;
+	}
+	a {
+		color: $orange;
+		border-bottom: 1px dotted $orange;
+		font-size: 14px;
+		transition: all 0.3s ease;
+		&:hover {
+			border-color: transparent;
+		}
+	}
+	button {
+		margin-top: 0;
+	}
+}
+
+.registration__info {
+	padding-top: $pad-s;
+	@include res(s) {
+		padding-top: 0;
+	}
+	.btn {
+		margin-top: $pad-s;
+		margin-bottom: $pad-s;
+		@include res(l) {
+			margin-top: $pad-xs;
+			margin-bottom: $pad-xs;
+		}
+	}
+}

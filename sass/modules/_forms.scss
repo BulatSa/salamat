@@ -187,6 +187,9 @@ button {
 		@include placeholder {
 			color: #cc0000;
 		}
+		&+.i-eye {
+			color: #cc0000;
+		}
 	}
 	&+.i-eye {
 		position: absolute;

@@ -1,0 +1,47 @@
+.soc-icon-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: $pad-xs;
+	padding-bottom: $pad-s;
+	@include res(s) {
+		padding-top: $pad-xxs;
+		padding-bottom: $pad-xs;
+	}
+}
+.soc-icon {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	margin-right: 15px;
+	border-radius: 50% 5px 50% 50%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	@include res(l) {
+		width: 40px;
+		height: 40px;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+	&--vk {
+		background-image: url('../img/icons/soc-vk.svg');
+		background-color: #48729e;
+	}
+	&--fb {
+		background-image: url('../img/icons/soc-fb.svg');
+		background-color: #3b5998;
+	}
+	&--ok {
+		background-image: url('../img/icons/soc-ok.svg');
+		background-color: #eb722e;
+	}
+	&--gplus {
+		background-image: url('../img/icons/soc-gplus.svg');
+		background-color: #dc4e41;
+	}
+	&--twi {
+		background-image: url('../img/icons/soc-twi.svg');
+		background-color: #00aced;
+	}
+}

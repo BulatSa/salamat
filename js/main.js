@@ -605,3 +605,51 @@ $(document).ready(function(){
 /***********************
 Custom Input File END
 ***********************/
+
+
+/***********************
+Yandex Map BEGIN
+***********************/
+$(document).ready(function(){
+
+	if($('#ya-map').length) {
+		ymaps.ready(function () {
+			var coordX, coordY;
+			coordX = $('#ya-map').data('coordx');
+			coordY = $('#ya-map').data('coordy');
+
+			var myMap = new ymaps.Map('ya-map', {
+					center: [coordX, coordY],
+					zoom: 15
+				}),
+
+				// Создаём макет содержимого.
+				MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+					'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+				),
+
+				myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+					hintContent: 'Собственный значок метки',
+					balloonContent: 'Это красивая метка'
+				}, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#image',
+					// Своё изображение иконки метки.
+					iconImageHref: 'img/icons/map-icon.svg',
+					// Размеры метки.
+					iconImageSize: [40, 46],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-5, -40]
+				});
+
+			myMap.geoObjects
+				.add(myPlacemark);
+		});
+	}
+
+});
+/***********************
+Yandex Map END
+***********************/
