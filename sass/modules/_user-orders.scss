@@ -1,0 +1,164 @@
+.user-orders-sec {}
+
+.user-orders {}
+
+.user-orders__item {
+	margin-bottom: $pad-s;
+	padding: $pad-s $pad-s;
+	border-radius: 10px;
+	border: 1px solid #dedede;
+	@include res(l) {
+		margin-bottom: $pad-xs;
+		padding: $pad-xs $pad-xxs;
+	}
+}
+
+.user-orders__item-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: $pad-xxs;
+	p {
+		padding-bottom: 0;
+	}
+	span {
+		font-size: 20px;
+		font-family: $font-head;
+		font-weight: 600;
+		@include res(l) {
+			font-size: 16px;
+		}
+		&.proccess {
+			color: $orange;
+		}
+		&.done {
+			color: $green;
+		}
+	}
+}
+
+.user-orders__item-date {
+	font-size: 20px;
+	color: #b3b3b3;
+	@include res(l) {
+		font-size: 16px;
+	}
+}
+
+.user-orders__item-table {
+	overflow: auto;
+}
+
+.order-table {
+	min-width: 400px;
+	margin-bottom:$pad-xs;
+	padding-bottom: $pad-xxs;
+	border-bottom: 1px solid #dedede;
+}
+
+.order-table__row {
+	display: flex;
+	align-items: center;
+	padding-top: $pad-xxs;
+	padding-bottom: $pad-xxs;
+	font-size: 14px;
+	color: #5f6c77;
+	@include res(l) {
+		font-size: 12px;
+	}
+	&--title {
+		margin-bottom: $pad-xxs;
+		padding-top: $pad-xs;
+		padding-bottom: $pad-xs;
+		font-size: 16px;
+		border-bottom: 1px solid #dedede;
+		@include res(l) {
+			font-size: 14px;
+		}
+	}
+}
+
+.order-table__name {
+	width: 40%;
+	padding-right: 15px;
+}
+a.order-table__name {
+	transition: all 0.3s ease;
+	&:hover {
+		color: $orange;
+	}
+}
+
+.order-table__price {
+	width: 15%;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.order-table__count {
+	width: 15%;
+	text-align: center;
+}
+
+.order-table__discount {
+	width: 15%;
+	text-align: center;
+}
+
+.order-table__summ {
+	width: 15%;
+	text-align: center;
+	white-space: nowrap;
+}
+
+
+.user-orders__item-summ {
+	padding-bottom: $pad-xs;
+}
+
+.user-orders__item-summ-row {
+	padding-bottom: 5px;
+	font-size: 16px;
+	color: #5f6c77;
+	&--title {
+		padding-bottom: $pad-xxs;
+		font-weight: 600;
+		font-size: 20px;
+		font-family: $font-head;
+		color: #233647;
+	}
+}
+
+.user-orders__item-control-row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	@include res(xs) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.btn {
+		@include res(xs) {
+			margin-bottom: $pad-xxs;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&+.user-orders__item-control-row {
+		padding-top: $pad-xs;
+	}
+	.control-link {
+		display: inline-block;
+		color: $orange;
+		font-size: 16px;
+		border-bottom: 1px dotted $orange;
+		transition: all 0.3s ease;
+		@include res(l) {
+			font-size: 14px;
+		}
+		&:hover {
+			border-color: transparent;
+		}
+	}
+}
