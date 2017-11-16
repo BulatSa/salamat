@@ -30,5 +30,6 @@
 		<li><a href="/orders.php">ЛК - Мои заказы</a></li>
 		<br>
 		<li><a href="/compare.php">Сравнение</a></li>
+		<li><a href="/basket.php">Корзина</a></li>
 	</ul>
 </section>

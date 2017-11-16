@@ -38,7 +38,7 @@
 					<div class="user-orders__item-table">
 						<div class="order-table">
 							<div class="order-table__row order-table__row--title">
-								<span class="order-table__name">Наименование</span>
+								<span class="order-table__name">Название</span>
 								<span class="order-table__price">Цена</span>
 								<span class="order-table__count">Кол–во</span>
 								<span class="order-table__discount">Скидка</span>
@@ -104,7 +104,7 @@
 					<div class="user-orders__item-table">
 						<div class="order-table">
 							<div class="order-table__row order-table__row--title">
-								<span class="order-table__name">Наименование</span>
+								<span class="order-table__name">Название</span>
 								<span class="order-table__price">Цена</span>
 								<span class="order-table__count">Кол–во</span>
 								<span class="order-table__discount">Скидка</span>
@@ -169,7 +169,7 @@
 					<div class="user-orders__item-table">
 						<div class="order-table">
 							<div class="order-table__row order-table__row--title">
-								<span class="order-table__name">Наименование</span>
+								<span class="order-table__name">Название</span>
 								<span class="order-table__price">Цена</span>
 								<span class="order-table__count">Кол–во</span>
 								<span class="order-table__discount">Скидка</span>

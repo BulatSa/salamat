@@ -1,4 +1,5 @@
 .product-item {
+	position: relative;
 	margin-top: 10px;
 	margin-bottom: $pad-xxs;
 	padding-top: 10px;
@@ -20,6 +21,48 @@
 
 		.product-item__title{
 			color: $orange;
+		}
+	}
+}
+
+.product-item__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 1px solid #dedede;
+	transition: all 0.3s ease;
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 14px;
+		height: 1px;
+		margin-right: 1px;
+		transition: all 0.3s ease;
+		transform: translate3d(-50%, -50%,0) rotate(45deg);
+		background: #dedede;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 14px;
+		height: 1px;
+		transition: all 0.3s ease;
+		transform: translate3d(-50%, -50%,0) rotate(-45deg);
+		background: #dedede;
+	}
+	&:hover {
+		border-color: $orange;
+		transform: scale(1.2);
+		&:before, &:after {
+			background: $orange;
 		}
 	}
 }

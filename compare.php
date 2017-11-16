@@ -26,6 +26,7 @@
 			<div class="user-compare__items-list">
 				<div class="user-compare__items-product">
 					<div class="product-item">
+						<a href="#" class="product-item__close" title="Удалить"></a>
 						<a href="#" class="product-item__link" title="Full Name">
 							<div class="product-item__img">
 								<img alt="" class="" src="img/offer-item-1.jpg">
@@ -56,6 +57,7 @@
 				</div>
 				<div class="user-compare__items-product">
 					<div class="product-item">
+						<a href="#" class="product-item__close" title="Удалить"></a>
 						<a href="#" class="product-item__link" title="Full Name">
 							<div class="product-item__img">
 								<img alt="" class="" src="img/offer-item-1.jpg">
@@ -86,6 +88,7 @@
 				</div>
 				<div class="user-compare__items-product">
 					<div class="product-item">
+						<a href="#" class="product-item__close" title="Удалить"></a>
 						<a href="#" class="product-item__link" title="Full Name">
 							<div class="product-item__img">
 								<img alt="" class="" src="img/offer-item-1.jpg">
@@ -116,6 +119,7 @@
 				</div>
 				<div class="user-compare__items-product">
 					<div class="product-item">
+						<a href="#" class="product-item__close" title="Удалить"></a>
 						<a href="#" class="product-item__link" title="Full Name">
 							<div class="product-item__img">
 								<img alt="" class="" src="img/offer-item-1.jpg">

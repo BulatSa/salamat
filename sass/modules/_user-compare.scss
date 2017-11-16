@@ -2,9 +2,9 @@
 
 .user-compare {
 	padding-top: $pad-xxs;
-	@include res(l) {
+
 		overflow-Y: auto;
-	}
+
 }
 
 .user-compare__settings {
@@ -73,28 +73,26 @@
 }
 
 .user-compare__table {
-
-	width: 100%;
 	padding-top: $pad-xxs;
 	padding-bottom: $pad-xxs;
 }
 
 .compare-table {
-	display: flex;
+	display: inline-flex;
 	flex-wrap: wrap;
-	width: 100%;
+	min-width: 100%;
 	margin-top: $pad-xxs;
 	border-top: 1px solid #dedede;
 }
 
 .compare-table__row {
-	width: 100%;
+	min-width: 100%;
 	display: flex;
 	align-items: center;
+	flex-shrink: 0;
 	padding-top: $pad-xxs;
 	padding-bottom: $pad-xxs;
 	border-bottom: 1px solid #dedede;
-
 }
 
 .compare-table__set {
@@ -106,6 +104,12 @@
 	font-family: $font-head;
 	font-size: 20px;
 	flex-shrink: 1;
+	@include res(l) {
+		font-size: 18px;
+	}
+	@include res(s) {
+		font-size: 16px;
+	}
 }
 
 .compare-table__position {

@@ -1,0 +1,249 @@
+.user-basket-sec {}
+
+.user-basket {}
+
+.user-basket__list {}
+
+.user-basket__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: $pad-s;
+	padding: $pad-s $pad-s;
+	color: #5f6c77;
+	border-radius: 10px;
+	border: 1px solid #e1e1e1;
+	box-shadow: 0 4px 20px 0 transparentize($orange, 1);
+	transition: all 0.3s ease;
+	@include res(l) {
+		padding: $pad-xs $pad-xs;
+	}
+	@include res(m) {
+		margin-bottom: $pad-xs;
+	}
+	@include res(s) {
+		padding: $pad-xxs $pad-xxs;
+	}
+	&:hover {
+		box-shadow: 0 4px 20px 0 transparentize($orange, 0.35);
+	}
+}
+
+.user-basket__item-counter {
+	width: 15%;
+	font-size: 16px;
+	@include res(s) {
+		width: 25%;
+	}
+}
+
+.user-basket__item-photo-wrap {
+	display: flex;
+	align-items: center;
+	width: 25%;
+	padding-right: 15px;
+	@include res(s) {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 5px;
+	}
+}
+
+.user-basket__item-photo {
+	width: 85%;
+	max-width: 160px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #e1e1e1;
+	overflow: hidden;
+	@include res(s) {
+		width: 75%;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		max-height: 150px;
+	}
+}
+
+.user-basket__item-info {
+	width: 75%;
+	display: flex;
+	align-self: flex-start;
+	font-size: 14px;
+	@include res(s) {
+		width: 100%;
+		flex-wrap: wrap;
+		padding-top: $pad-xxs;
+	}
+}
+
+.user-basket__item-title {
+	margin-bottom: $pad-xs;
+	padding: 0 5px $pad-xs;
+	font-size: 16px;
+	border-bottom: 1px solid #dedede;
+	@include res(l) {
+		font-size: 14px;
+	}
+	@include res(s) {
+		width: 25%;
+		padding: 0 5px $pad-xxs;
+		margin-bottom: $pad-xxs;
+		font-size: 12px;
+		text-align: left;
+	}
+}
+
+.user-basket__item-value {
+	display: inline-block;
+	padding: 0 5px;
+	@include res(s) {
+		width: 75%;
+		text-align: left;
+		padding: 0 5px $pad-xxs;
+		margin-bottom: $pad-xxs;
+		border-bottom: 1px solid #dedede;
+	}
+}
+
+a.user-basket__item-value {
+	display: inline-block;
+	transition: all 0.3s ease;
+	&:hover {
+		color: $orange;
+	}
+}
+
+.user-basket__item-name {
+	width: 40%;
+	@include res(s) {
+		display: flex;
+		width: 100%;
+	}
+	span {
+		display: block;
+	}
+}
+
+.user-basket__item-price {
+	display: block;
+	width: 15%;
+	text-align: center;
+	white-space: nowrap;
+	span {
+		display: block;
+	}
+	@include res(s) {
+		display: flex;
+		width: 100%;
+	}
+}
+
+.user-basket__item-count {
+	display: block;
+	width: 15%;
+	text-align: center;
+	span {
+		display: block;
+	}
+	@include res(s) {
+		display: flex;
+		width: 100%;
+	}
+}
+
+.user-basket__item-discount {
+	display: block;
+	width: 15%;
+	text-align: center;
+	span {
+		display: block;
+	}
+	@include res(s) {
+		display: flex;
+		width: 100%;
+	}
+}
+
+.user-basket__item-summ {
+	display: block;
+	width: 15%;
+	text-align: center;
+	white-space: nowrap;
+	span {
+		display: block;
+	}
+	@include res(s) {
+		display: flex;
+		width: 100%;
+	}
+}
+
+.user-basket__item-remove {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 1px solid #dedede;
+	transition: all 0.3s ease;
+	z-index: 1;
+	@include res(l) {
+		top: 6px;
+		right: 6px;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 14px;
+		height: 1px;
+		margin-right: 1px;
+		transition: all 0.3s ease;
+		transform: translate3d(-50%, -50%,0) rotate(45deg);
+		background: #dedede;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 14px;
+		height: 1px;
+		transition: all 0.3s ease;
+		transform: translate3d(-50%, -50%,0) rotate(-45deg);
+		background: #dedede;
+	}
+	&:hover {
+		border-color: $orange;
+		transform: scale(1.2);
+		&:before, &:after {
+			background: $orange;
+		}
+	}
+}
+
+.user-basket__total {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.user-basket__promo {
+	@include res(s) {
+		width: 100%;
+		padding-bottom: $pad-xs;
+	}
+	form {
+		input {
+			position: relative;
+			margin-right: -40px;
+		}
+	}
+}
+
+.user-basket__summ {}
