@@ -31,5 +31,7 @@
 		<br>
 		<li><a href="/compare.php">Сравнение</a></li>
 		<li><a href="/basket.php">Корзина</a></li>
+		<br>
+		<li><a href="/catalog.php">Каталог</a></li>
 	</ul>
 </section>

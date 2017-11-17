@@ -1,0 +1,150 @@
+.catalog-head-sec {
+	margin-bottom: $pad-s;
+	padding-top: $pad-xs;
+	padding-bottom: $pad-xxs;
+	box-shadow: 0 3px 5px 0 transparentize(#000, 0.85);
+	@include res(l) {
+		margin-bottom: $pad-xs;
+	}
+	@include res(s) {
+		margin-bottom: $pad-xxs;
+		padding-top: $pad-xxs;
+	}
+}
+
+.catalog-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: $pad-xxs;
+	@include res(l) {
+		align-items: flex-end;
+	}
+	@include res(s) {
+		flex-wrap: wrap;
+	}
+}
+
+.catalog-head__sort {
+	font-size: 16px;
+	@include res(l) {
+		font-size: 14px;
+	}
+	@include res(s) {
+		width: 100%;
+	}
+	span {
+		display: inline-block;
+		margin-right: 20px;
+		@include res(m) {
+			display: block;
+			margin-bottom: $pad-xxs;
+		}
+	}
+	a {
+		display: inline-block;
+		padding: 8px 25px 10px;
+		border-radius: 25px;
+		color: transparentize(#233647, 0.5);
+		transition: all 0.3s ease;
+		@include res(l) {
+			padding: 6px 18px 7px;
+		}
+		&:hover {
+			color: $green;
+		}
+		&.active {
+			color: $green;
+			border: 1px solid $green;
+		}
+	}
+	i {
+		display: inline-block;
+		margin-left: 5px;
+		font-size: 12px;
+	}
+}
+
+.catalog-head__view {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 16px;
+	@include res(l) {
+		padding-bottom: 7px;
+		font-size: 14px;
+	}
+	@include res(m) {
+		flex-wrap: wrap;
+	}
+	@include res(s) {
+		width: 100%;
+		justify-content: flex-start;
+		padding-top: $pad-xs;
+	}
+}
+
+.catalog-head__compare-wrap {
+	@include res(m) {
+		width: 100%;
+		text-align: right;
+	}
+	@include res(s) {
+		text-align: left;
+	}
+}
+
+.catalog-head__compare {
+	margin-right: $pad-s;
+	color: #5f6c77;
+	@include res(m) {
+		display: inline-block;
+		margin-right: 0;
+		margin-bottom: $pad-xxs;
+	}
+	span {
+		color: $orange;
+	}
+	i {
+		display: inline-block;
+		font-size: 14px;
+		color: $orange;
+	}
+}
+
+.catalog-head__count {
+	span {
+		display: inline-block;
+		margin-right: $pad-xxs;
+		color: #5f6c77;
+		@include res(l) {
+			margin-right: 0;
+		}
+	}
+	a {
+		display: inline-block;
+		padding: 0 5px;
+		color: transparentize(#5f6c77, 0.5);
+		transition: all 0.3s ease;
+		&:hover {
+			color: #5f6c77;
+		}
+		&.active {
+			color: #5f6c77;
+		}
+	}
+}
+
+.catalog-head__position {
+	padding-left: 10px;
+	a {
+		margin-left: 10px;
+		transition: all 0.3s ease;
+		&:hover {
+			color: $green;
+		}
+		&.active {
+			color: $green;
+		}
+	}
+}

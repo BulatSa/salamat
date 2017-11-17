@@ -30,6 +30,21 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.i-position-row:before {
+	content: "\e915";
+}
+.i-position-cell:before {
+	content: "\e916";
+}
+.i-filter:before {
+	content: "\e917";
+}
+.i-arrow-bottom:before {
+	content: "\e918";
+}
+.i-arrow-top:before {
+	content: "\e919";
+}
 .i-mail:before {
 	content: "\e912";
 }

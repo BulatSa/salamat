@@ -33,7 +33,7 @@
 	display: flex;
 	margin-right: -10px;
 	font-size: 18px;
-	@include res(m) {
+	@include res(l) {
 		font-size: 16px;
 	}
 	@include res(s) {

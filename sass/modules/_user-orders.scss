@@ -114,6 +114,9 @@ a.order-table__name {
 
 .user-orders__item-summ {
 	padding-bottom: $pad-xs;
+	@include res(s) {
+		padding-bottom: 0;
+	}
 }
 
 .user-orders__item-summ-row {

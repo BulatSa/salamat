@@ -16,7 +16,7 @@
 	border: 1px solid #e1e1e1;
 	box-shadow: 0 4px 20px 0 transparentize($orange, 1);
 	transition: all 0.3s ease;
-	@include res(l) {
+	@include res(xl) {
 		padding: $pad-xs $pad-xs;
 	}
 	@include res(m) {
@@ -246,4 +246,8 @@ a.user-basket__item-value {
 	}
 }
 
-.user-basket__summ {}
+.user-basket__summ {
+	.user-orders__item-summ {
+		padding-bottom: 0;
+	}
+}

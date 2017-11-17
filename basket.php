@@ -143,4 +143,41 @@
 </section>
 
 
+<section class="basket-gifts-sec def-sec">
+	<div class="basket-gifts container">
+		<h2>Доступные подарки</h2>
+		<div class="basket-gifts__list row">
+			<div class="grid-4 grid-6_l grid-12_s">
+				<div class="basket-gifts__item">
+					<a href="#" class="basket-gifts__item-img" target="_blank">
+						<img src="img/offer-item-1.jpg" alt="">
+					</a>
+					<div class="basket-gifts__item-info">
+						<a href="#" class="basket-gifts__item-name" target="_blank">Пледы для сна</a>
+						<span class="basket-gifts__item-descr">Подарок</span>
+						<span class="basket-gifts__item-price">0 <span>руб.</span></span>
+						<a href="#" class="btn btn--mini">В корзину<i class="i-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="order-steps-sec def-sec">
+	<div class="order-steps container">
+		<div class="order-steps__back">
+			<a href="#"><i class="i-arrow-left"></i>Продолжить покупки</a>
+		</div>
+		<div class="order-steps__click">
+			<a href="#" class="btn btn--rever" title="Купить в 1 клик">В 1 клик <i class="i-right"></i></a>
+		</div>
+		<div class="order-steps__next">
+			<a href="#" class="btn">Все верно, перейти к оформлению<i class="i-right"></i></a>
+		</div>
+	</div>
+</section>
+
+
 <?php include('footer.php'); ?>
