@@ -94,6 +94,21 @@ h4, .h4 {
 	}
 }
 
+h5, .h5 {
+	display: block;
+	padding-bottom: $pad-xxs;
+	line-height: 1.2;
+	font-family: $font-head;
+	font-size: 18px;
+	font-weight: 600;
+	@include res(l) {
+		font-size: 16px;
+	}
+	@include res(s) {
+		font-size: 14px;
+	}
+}
+
 .rub{
 	display: inline-block;
 	font-size: 50%;

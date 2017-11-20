@@ -49,9 +49,52 @@
 		opacity: 0.2!important;
 		pointer-events: none!important;
 	}
+	.slick-dots {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		list-style: none;
+		transform: translate(-50%, 0);
+		li {
+			padding: 5px;
+			cursor: pointer;
+			&:hover {
+				button {
+					background: transparentize($green, 0.5);
+				}
+			}
+			&.slick-active {
+				button {
+					background: $green;
+				}
+			}
+		}
+		button {
+			display: block;
+			width: 16px;
+			height: 16px;
+			padding: 5px;
+			font-size: 0;
+			line-height: 0;
+			color: transparent;
+			border: 2px solid $green;
+			border-radius: 50%;
+			outline: none;
+			cursor: pointer;
+			background: transparent;
+			transition: all 0.3s ease;
+		}
+
+	}
 }
 
 .salamat-slide {
 	padding-left: $pad-xxs;
 	padding-right: $pad-xxs;
+	img {
+		display: block;
+	}
 }

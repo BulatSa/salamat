@@ -33,5 +33,6 @@
 		<li><a href="/basket.php">Корзина</a></li>
 		<br>
 		<li><a href="/catalog.php">Каталог</a></li>
+		<li><a href="/product.php">Страница товара</a></li>
 	</ul>
 </section>

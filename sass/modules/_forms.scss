@@ -333,10 +333,18 @@ textarea {
 
 		&:checked + span{
 			&:before {
+				border-color: $green;
 				background: $green;
 			}
 			&:after{
 				opacity: 1;
+			}
+		}
+		&[type='radio'] {
+			&:checked + span {
+				&:after {
+					opacity: 0;
+				}
 			}
 		}
 
@@ -359,7 +367,7 @@ textarea {
 			top: 0;
 			width: 16px;
 			height: 16px;
-			border: 2px solid $green;
+			border: 2px solid #c7c7c7;
 			border-radius: 3px;
 			transition: all 0.3s ease;
 		}
@@ -381,6 +389,14 @@ textarea {
 
 		a{
 			color: $black;
+		}
+	}
+
+	&:hover {
+		span {
+			&:before {
+				border-color: $green;
+			}
 		}
 	}
 }

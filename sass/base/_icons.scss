@@ -30,6 +30,12 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.i-shield:before {
+	content: "\e91a";
+}
+.i-truck:before {
+	content: "\e91b";
+}
 .i-position-row:before {
 	content: "\e915";
 }

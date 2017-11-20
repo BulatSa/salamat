@@ -180,71 +180,48 @@ $('#big-slider').slick({
 	dotsClass: 'big-slider-dots'
 });
 
-$('#offers-special').slick({
-	adaptiveHeight: true,
-	slidesToShow: 4,
-	slidesToScroll: 4,
-	lazyLoad: 'progressive',
-	infinite: false,
-	prevArrow: "<button type='button' class='slick-prev'></button>",
-	nextArrow: "<button type='button' class='slick-next'></button>",
-	responsive: [
-		{
-			breakpoint: 1040,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3
-			}
-		},
-		{
-			breakpoint: 780,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}
-	]
-});
+if($('.offers-row').length) {
+	var $offersArr = [];
+	$('.offers-row').each(function(indx, el){
+		$offersArr.push($(el));
+	});
+	for (var i = 0; i < $offersArr.length; i++) {
+		$offersArr[i].slick({
+			adaptiveHeight: true,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			infinite: false,
+			lazyLoad: 'progressive',
+			prevArrow: "<button type='button' class='slick-prev'></button>",
+			nextArrow: "<button type='button' class='slick-next'></button>",
+			responsive: [
+				{
+					breakpoint: 1040,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3
+					}
+				},
+				{
+					breakpoint: 780,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
 
-$('#offers-new').slick({
-	adaptiveHeight: true,
-	slidesToShow: 4,
-	slidesToScroll: 4,
-	infinite: false,
-	lazyLoad: 'progressive',
-	prevArrow: "<button type='button' class='slick-prev'></button>",
-	nextArrow: "<button type='button' class='slick-next'></button>",
-	responsive: [
-		{
-			breakpoint: 1040,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3
-			}
-		},
-		{
-			breakpoint: 780,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}
-	]
-});
+	}
+}
+
 
 $('.detail__gallery').slick({
 	adaptiveHeight: true,
@@ -371,8 +348,49 @@ $('.company-salons__list').slick({
 		},
 	]
 });
+
+$('.product-info__slider .salamat-slider').slick({
+	adaptiveHeight: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	infinite: false,
+	lazyLoad: 'progressive',
+	dots: true,
+	prevArrow: "<button type='button' class='slick-prev'></button>",
+	nextArrow: "<button type='button' class='slick-next'></button>"
+});
 /***********************
  Slick END
+***********************/
+
+
+/***********************
+Product Col BEGIN
+***********************/
+$(document).ready(function(){
+	if($('.product-info__col').length) {
+		var $productColInput = $('.product-info__col input');
+
+		$('.product-info__col-btn').on('click', function(){
+			var currentVal = +$productColInput.val();
+			if (currentVal > 0) {
+
+				if($(this).hasClass('product-info__col-btn--down')) {
+					currentVal = +$productColInput.val();
+					if (currentVal > 1) {
+						$productColInput.val(currentVal - 1);
+					}
+				} else {
+					currentVal = +$productColInput.val();
+					$productColInput.val(currentVal + 1);
+				}
+			}
+
+		});
+	}
+});
+/***********************
+Product Col END
 ***********************/
 
 
@@ -419,6 +437,115 @@ $(document).ready(function(){
 });
 /***********************
 Faq END
+***********************/
+
+
+/***********************
+Catalog Faq BEGIN
+***********************/
+$(document).ready(function(){
+	$('.catalog-faq__question .user-content').slideUp();
+
+	$('.catalog-faq__question-title').on('click', function(){
+
+		$('.catalog-faq__question-title').not($(this)).next('.user-content').slideUp();
+		$('.catalog-faq__question-title').not($(this)).removeClass('active');
+		$(this).next('.user-content').slideToggle();
+		$(this).toggleClass('active');
+	});
+});
+/***********************
+Catalog Faq END
+***********************/
+
+
+/***********************
+Filter Catalog BEGIN
+***********************/
+$(document).ready(function(){
+	if ($(window).width() < 680) {
+		$('.catalog-list__filter-sets').slideUp();
+		$('.catalog-list__filter-title').on('click', function () {
+			$('.catalog-list__filter-title').not($(this)).removeClass('active');
+
+			$(this).next('.catalog-list__filter-sets').slideToggle();
+			$(this).toggleClass('active');
+		});
+	}
+
+});
+/***********************
+Filter Catalog END
+***********************/
+
+
+/***********************
+IonRange Slider BEGIN
+***********************/
+$(document).ready(function(){
+	var $range = $(".js-range-slider"),
+		$inputFrom = $(".js-input-from"),
+		$inputTo = $(".js-input-to"),
+		instance,
+		min = $('.catalog-list__filter-price').data('min-price'),
+		max = $('.catalog-list__filter-price').data('max-price'),
+		from = 0,
+		to = 0;
+
+	$range.ionRangeSlider({
+		type: "double",
+		min: min,
+		max: max,
+		from: max/10,
+		to: max/2,
+		onStart: updateInputs,
+		onChange: updateInputs,
+		hide_min_max: true,
+		hide_from_to: true,
+		grid: false
+	});
+	instance = $range.data("ionRangeSlider");
+
+	function updateInputs (data) {
+		from = data.from;
+		to = data.to;
+
+		$inputFrom.prop("value", from);
+		$inputTo.prop("value", to);
+	}
+
+	$inputFrom.on("input", function () {
+		var val = $(this).prop("value");
+
+		// validate
+		if (val < min) {
+			val = min;
+		} else if (val > to) {
+			val = to;
+		}
+
+		instance.update({
+			from: val
+		});
+	});
+
+	$inputTo.on("input", function () {
+		var val = $(this).prop("value");
+
+		// validate
+		if (val < from) {
+			val = from;
+		} else if (val > max) {
+			val = max;
+		}
+
+		instance.update({
+			to: val
+		});
+	});
+});
+/***********************
+IonRange Slider END
 ***********************/
 
 
@@ -488,8 +615,6 @@ $(document).ready(function() {
 		});
 	}
 });
-
-
 /***********************
 Input mask END
 ***********************/

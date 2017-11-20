@@ -5,6 +5,8 @@
 @import 'vendors/fancybox';
 @import 'vendors/slick';
 @import 'vendors/nice-select';
+@import 'vendors/ion.rangeslider';
+@import 'vendors/ion.rangeSlider.skinHTML5.scss';
 
 @import 'base/reset';
 @import 'base/fonts';
@@ -55,6 +57,9 @@
 @import 'modules/order-steps';
 @import 'modules/catalog-head';
 @import 'modules/catalog-list';
+@import 'modules/catalog-faq';
+@import 'modules/preview-products';
+@import 'modules/product-info';
 
 @import 'pages/home';
 @import 'pages/news';
