@@ -145,7 +145,7 @@ h5, .h5 {
 		&:last-child {
 			padding-bottom: 0;
 		}
-		&+h3, &+h4 {
+		&+h3, &+h4, &+h5 {
 			padding-top: 15px;
 			@include res(l) {
 				padding-top: 12px;
@@ -178,12 +178,8 @@ h5, .h5 {
 		}
 	}
 	ul {
+		padding-bottom: 1em;
 		list-style: none;
-		&:last-child {
-			li:last-child {
-				padding-bottom: 0;
-			}
-		}
 		li {
 			position: relative;
 			padding-left: $pad-xs;
@@ -197,6 +193,9 @@ h5, .h5 {
 				height: 10px;
 				border-radius: 50% 0 50% 50%;
 				background: $green;
+			}
+			&:last-child {
+				padding-bottom: 0;
 			}
 		}
 		&.good {
@@ -264,6 +263,15 @@ h5, .h5 {
 				}
 			}
 		}
+		&+h3, &+h4, &+h5 {
+			padding-top: 15px;
+			@include res(l) {
+				padding-top: 12px;
+			}
+			@include res(s) {
+				padding-top: 8px;
+			}
+		}
 	}
 	blockquote {
 		display: block;
@@ -291,7 +299,7 @@ h5, .h5 {
 	h1, h4 {
 		color: #233647;
 	}
-	h2, h3 {
+	h2, h3, h5 {
 		color: #111b24;
 	}
 	.fluid-width-video-wrapper {

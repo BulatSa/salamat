@@ -6,7 +6,7 @@
 		<a href="#">Каталог</a>
 		<a href="#">Ортопедическая обувь и стельки</a>
 		<a href="#">Детская ортопедическая обувь</a>
-		<a href="#"></a>
+		<a href="#">Ортез для позвоночника  BAUERFEIND SecuTec Lumbo</a>
 	</div>
 </section>
 
@@ -66,7 +66,7 @@
 							</div>
 						</div>
 						<div class="product-info__setting">
-							<span class="product-info__setting-title h5">Размер</span>
+							<span class="product-info__setting-title h5">Размер <a href="img/certificate-big.jpg" class="fancy">Подобрать размер</a></span>
 							<div class="product-info__setting-list">
 								<label class="style-checkbox">
 									<input type="radio" name="product-set-2" data-req="true">
@@ -140,6 +140,207 @@
 					<div class="product-info__btns">
 						<a href="#" class="btn">В корзину<i class="i-right"></i></a>
 						<a href="#" class="btn btn--rever">В 1 клик<i class="i-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="product-tabs-sec def-sec-bottom">
+	<div class="product-tabs container">
+		<div class="product-tabs__nav">
+			<a href="#" class="active">Характеристики</a>
+			<a href="#">Отзывы</a>
+			<a href="#">Сертификаты</a>
+			<a href="#">Способы получения товара</a>
+		</div>
+		<div class="product-tabs__blocks">
+			<div class="product-tabs__block">
+				<div class="row">
+					<div class="grid-6 grid-12_l">
+						<div class="user-content user-content--mini">
+							<h5>Материал</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eum eveniet, harum illo iure maiores obcaecati odit perspiciatis quod, recusandae sapiente unde vitae voluptate. Blanditiis commodi doloremque nesciunt provident sunt.</p>
+							<h5>Уход:</h5>
+							<ul>
+								<li>Необходим режим деликатной стирки при температуре 30-40°С с применением моющих средств для цветного белья.</li>
+								<li>Новое постельное бельё перед первым использованием выстирать при температуре 40°С, предварительно вывернув на изнаночную сторону;</li>
+								<li>Не отбеливать.</li>
+							</ul>
+							<h5>Основные характеристики</h5>
+							<p>Поддержка сетей 4G (LTE) — нет <br>Количество ядер — 4 <br>Количество мегапикселей основной камеры (Мп) — 8</p>
+						</div>
+					</div>
+					<div class="grid-6 grid-12_l">
+						<div class="product-tabs__cons">
+							<div class="product-tabs__cons-info">
+								<div class="user-content">
+									<p>Формат Саламата, состоящий из двух зон:</p>
+									<ul>
+										<li>зона здорового образа жизни</li>
+										<li>консультационно–диагностическая зона с обязательным кабинетом врача, не имеет аналогов в России.</li>
+									</ul>
+								</div>
+								<a href="#" class="btn fancy">Получить консультацию<i class="i-right"></i></a>
+							</div>
+							<div class="product-tabs__cons-pers">
+								<div class="product-tabs__cons-pers-img">
+									<img src="img/company/team-1.jpg" alt="">
+								</div>
+								<div class="product-tabs__cons-pers-info">
+									<span>Ростислава Игоревна Милославская</span>
+									<p>Продавец–консультант Lorem ipsum dolor</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="product-tabs__block">
+				<div class="row">
+					<div class="grid-6 grid-10_l grid-12_m">
+						<div class="review-text">
+							<div class="user-content user-content--mini">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut, cum! Accusantium aliquam atque autem deleniti dignissimos dolores ducimus enim nostrum odio officiis placeat, provident sapiente sequi tempore ullam velit!</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+							<div class="review-about">
+								<p class="review-about__name">Наталья, Москва</p>
+								<div class="rating">
+									<i class="i-star full"></i>
+									<i class="i-star full"></i>
+									<i class="i-star full"></i>
+									<i class="i-star full"></i>
+									<i class="i-star"></i>
+								</div>
+							</div>
+						</div>
+						<div class="review-text">
+							<div class="user-content user-content--mini">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut, cum! Accusantium aliquam atque autem deleniti dignissimos dolores ducimus enim nostrum odio officiis placeat, provident sapiente sequi tempore ullam velit!</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+							<div class="review-about">
+								<p class="review-about__name">Наталья, Москва</p>
+								<div class="rating">
+									<i class="i-star full"></i>
+									<i class="i-star full"></i>
+									<i class="i-star full"></i>
+									<i class="i-star full"></i>
+									<i class="i-star"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="product-tabs__block">
+				<div class="row">
+					<div class="grid-6 grid-10_l grid-12_m">
+						<div class="product-tabs__block-serts">
+							<a href="#" class="product-tabs__block-sert" target="_blank"><img src="img/icons/certificat.svg" alt=""><span>Lorem ipsum dolor sit amet</span></a>
+							<a href="#" class="product-tabs__block-sert" target="_blank"><img src="img/icons/certificat.svg" alt=""><span>Lorem  sit amet</span></a>
+							<a href="#" class="product-tabs__block-sert" target="_blank"><img src="img/icons/certificat.svg" alt=""><span>Lorem ipsum dolor sit ametipsum dolor Lorem ipsum dolor sit ametipsum dolor Lorem ipsum dolor sit ametipsum dolor</span></a>
+							<a href="#" class="product-tabs__block-sert" target="_blank"><img src="img/icons/certificat.svg" alt=""><span>Lorem ipsum dolor sit amet</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="product-tabs__block">
+				<div class="row">
+					<div class="grid-12">
+						<div class="market-adress__item row">
+							<div class="grid-6 grid-12_s">
+								<div class="market-adress__item-info">
+									<div class="user-content">
+										<b>ТЦ Пример:</b> <br>
+										<p>129515, Россия, г. Москва, ул. Академика Королева, д. 13, строение 1, этаж 8, помещение IV-комната 6</p>
+									</div>
+									<div class="market-adress__item-time">
+										<i class="i-clock"></i>
+										<b>Режим работы: 08:00 — 20:00</b>
+									</div>
+								</div>
+							</div>
+							<div class="grid-2 grid-12_s">
+								<div class="market-adress__item-phone">
+									<p>В наличии <b>51&nbsp;шт.</b></p>
+								</div>
+							</div>
+							<div class="grid-2 grid-6_s">
+								<div class="market-adress__item-phone">
+									<a href="tel:84950000000">8 (495) 000-00-00</a>
+								</div>
+							</div>
+							<div class="grid-2 grid-6_s">
+								<div class="market-adress__item-more">
+									<a href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="market-adress__item row">
+							<div class="grid-6 grid-12_s">
+								<div class="market-adress__item-info">
+									<div class="user-content">
+										<b>ТЦ Пример:</b> <br>
+										<p>129515, Россия, г. Москва, ул. Академика Королева, д. 13, строение 1, этаж 8, помещение IV-комната 6</p>
+									</div>
+									<div class="market-adress__item-time">
+										<i class="i-clock"></i>
+										<b>Режим работы: 08:00 — 20:00</b>
+									</div>
+								</div>
+							</div>
+							<div class="grid-2 grid-12_s">
+								<div class="market-adress__item-phone">
+									<p>В наличии <b>51&nbsp;шт.</b></p>
+								</div>
+							</div>
+							<div class="grid-2 grid-6_s">
+								<div class="market-adress__item-phone">
+									<a href="tel:84950000000">8 (495) 000-00-00</a>
+								</div>
+							</div>
+							<div class="grid-2 grid-6_s">
+								<div class="market-adress__item-more">
+									<a href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="market-adress__item row">
+							<div class="grid-6 grid-12_s">
+								<div class="market-adress__item-info">
+									<div class="user-content">
+										<b>ТЦ Пример:</b> <br>
+										<p>129515, Россия, г. Москва, ул. Академика Королева, д. 13, строение 1, этаж 8, помещение IV-комната 6</p>
+									</div>
+									<div class="market-adress__item-time">
+										<i class="i-clock"></i>
+										<b>Режим работы: 08:00 — 20:00</b>
+									</div>
+								</div>
+							</div>
+							<div class="grid-2 grid-12_s">
+								<div class="market-adress__item-phone">
+									<p>В наличии <b>51&nbsp;шт.</b></p>
+								</div>
+							</div>
+							<div class="grid-2 grid-6_s">
+								<div class="market-adress__item-phone">
+									<a href="tel:84950000000">8 (495) 000-00-00</a>
+								</div>
+							</div>
+							<div class="grid-2 grid-6_s">
+								<div class="market-adress__item-more">
+									<a href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

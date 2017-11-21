@@ -122,7 +122,6 @@
 .catalog-list__filter-reset {
 	position: relative;
 	display: inline-block;
-
 	margin-left: auto;
 	padding-left: $pad-xs;
 	padding-top: 2px;
@@ -136,6 +135,9 @@
 		margin-top: $pad-xs;
 		margin-bottom: $pad-xs;
 		margin-left: 0;
+	}
+	@include res(s) {
+		margin-bottom: 0;
 	}
 	&:hover {
 		color: $green;
@@ -196,7 +198,12 @@
 		@include res(s) {
 			display: block;
 			padding-top: $pad-s;
-			padding-bottom: $pad-xxs;
+			padding-bottom: 0;
+		}
+		a {
+			display: block;
+			max-width: 320px;
+			margin: 0 auto;
 		}
 	}
 }

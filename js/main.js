@@ -394,6 +394,28 @@ Product Col END
 ***********************/
 
 
+/*******************
+ Product-tabs BEGIN
+ *******************/
+$(document).ready(function() {
+	$('.product-tabs__nav a').on('click',function (e) {
+		e.preventDefault();
+		var index = $(this).index();
+		select_prod_tab(index);
+	});
+
+	function select_prod_tab(index) {
+		$('.product-tabs__block').removeClass('active').eq(index).addClass('active');
+		$('.product-tabs__nav a').removeClass('active').eq(index).addClass('active');
+	}
+
+	select_prod_tab(0);
+});
+/*******************
+ Product-tabs END
+ *******************/
+
+
 /***********************
 Masonry BEGIN
 ***********************/

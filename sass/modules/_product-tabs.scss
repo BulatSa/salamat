@@ -1,0 +1,149 @@
+.product-tabs-sec {
+	padding-top: $pad-s;
+}
+
+.product-tabs {}
+
+.product-tabs__nav {
+	display: flex;
+	flex-wrap: wrap;
+	a {
+		display: inline-block;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		padding: 6px 20px 7px;
+		border-radius: 25px;
+		border: 1px solid transparent;
+		color: transparentize(#233647, 0.5);
+		transition: all 0.3s ease;
+		font-size: 16px;
+		@include res(s) {
+			padding: 4px 10px 5px;
+			font-size: 14px;
+		}
+		&:hover {
+			color: $green;
+		}
+		&.active {
+			border-color: $green;
+			color: $green;
+		}
+	}
+}
+
+.product-tabs__blocks {
+	position: relative;
+	padding-top: $pad-xs;
+}
+
+.product-tabs__block {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+.product-tabs__cons {
+	display: flex;
+	padding-top: $pad-xs;
+	padding-right: 0;
+	padding-bottom: $pad-xs;
+	padding-left: $pad-s;
+	border-radius: 10px;
+	border: 1px solid #e2e2e2;
+	@include res(l) {
+		margin-top: $pad-s;
+	}
+	@include res(s) {
+		padding-left: $pad-xs;
+	}
+	@include res(xs) {
+		flex-wrap: wrap;
+		padding-left: $pad-xxs;
+		padding-right: $pad-xxs;
+	}
+}
+
+.product-tabs__cons-info {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-left: $pad-xs;
+	padding-right: $pad-s;
+	padding-bottom: $pad-m;
+	@include res(m) {
+		padding-left: 0;
+	}
+	@include res(xs) {
+		width: 100%;
+		order: 1;
+		padding-right: 0;
+	}
+	.btn {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.product-tabs__cons-pers {
+	max-width: 170px;
+	width: 100%;
+	@include res(xs) {
+		max-width: 100%;
+		margin: 0 auto $pad-xs;
+	}
+	span {
+		display: block;
+		padding-bottom: 5px;
+		font-size: 18px;
+		line-height: 1.3;
+		color: #111b24;
+		@include res(l) {
+			font-size: 16px;
+		}
+	}
+	p {
+		padding-bottom: 10px;
+		font-size: 14px;
+		color: #b3b3b3;
+	}
+}
+
+.product-tabs__cons-pers-img {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e2e2e2;
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+		@include res(xs) {
+			max-width: 160px;
+		}
+	}
+}
+
+.product-tabs__block-serts {}
+
+.product-tabs__block-sert {
+	display: block;
+	margin-bottom: $pad-xs;
+	&:hover {
+		span {
+			border-color: transparent;
+		}
+	}
+	span {
+		display: inline;
+		color: $orange;
+		border-bottom: 1px dotted $orange;
+		transition: all 0.3s ease;
+	}
+	img {
+		position: relative;
+		display: inline-block;
+		max-width: 22px;
+		vertical-align: middle;
+		margin-right: 8px;
+	}
+}

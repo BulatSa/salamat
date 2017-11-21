@@ -1,6 +1,7 @@
 .product-info-sec {
 	padding-top: $pad-xxs;
 	padding-bottom: $pad-m;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
 .product-info {}
@@ -9,6 +10,10 @@
 	position: relative;
 	padding-left: $pad-xs;
 	padding-right: $pad-xs;
+	@include res(m) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	@include res(s) {
 		margin-bottom: $pad-xs;
 	}
@@ -72,6 +77,10 @@
 		color: $orange;
 		border-bottom: 1px dotted $orange;
 		transition: all 0.3s ease;
+		&:hover {
+			color: $green;
+			border-color: transparent;
+		}
 	}
 	.rating {
 		flex-shrink:0;
@@ -79,6 +88,9 @@
 }
 
 .product-info__name {
+	@include res(s) {
+		display: none;
+	}
 	&--mobile {
 		display: none;
 		@include res(s) {
@@ -87,13 +99,38 @@
 	}
 }
 
-.product-info__settings {}
+.product-info__settings {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
 
 .product-info__setting {
+	display: inline-flex;
+	flex-direction: column;
 	padding-top: 5px;
 }
 
-.product-info__setting-title {}
+.product-info__setting-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.fancy {
+		display: block;
+		margin-left: 25px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		color: $orange;
+		border-bottom: 1px dotted $orange;
+		font-size: 14px;
+		font-family: $font;
+		font-weight: normal;
+		transition: all 0.3s ease;
+		&:hover {
+			border-color: transparent;
+		}
+	}
+}
 
 .product-info__setting-list {
 	display: flex;
@@ -101,26 +138,6 @@
 	label {
 		margin-right: 25px;
 	}
-}
-
-.product-info__benefits {
-	padding-bottom: $pad-xs;
-}
-
-.product-info__benefit {
-	padding-bottom: 5px;
-	font-size: 16px;
-	i {
-		color: #b5b5b5;
-	}
-}
-
-.product-info__benefit-icon {
-	display: inline-block;
-	width: 25px;
-	margin-right: 5px;
-	font-size: 14px;
-	text-align: center;
 }
 
 .product-info__col {
@@ -209,6 +226,37 @@
 		height: 2px;
 		background: #b3b3b3;
 	}
+}
+
+.product-info__benefits {
+	padding-bottom: $pad-xs;
+}
+
+.product-info__benefit {
+	padding-bottom: 5px;
+	font-size: 16px;
+	@include res(s) {
+		font-size: 14px;
+	}
+	i {
+		color: #b5b5b5;
+	}
+	a {
+		color: $orange;
+		border-bottom: 1px dotted $orange;
+		transition: all 0.3s ease;
+		&:hover {
+			border-color: transparent;
+		}
+	}
+}
+
+.product-info__benefit-icon {
+	display: inline-block;
+	width: 25px;
+	margin-right: 5px;
+	font-size: 14px;
+	text-align: center;
 }
 
 .product-info__btns {
