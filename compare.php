@@ -19,7 +19,7 @@
 	<div class="user-compare container">
 		<div class="user-compare__items">
 			<div class="user-compare__settings">
-				<p>Все параметры</p>
+				<p>Параметры</p>
 				<a href="#" class="active">Различающиеся</a>
 				<a href="#">Одинаковые</a>
 			</div>

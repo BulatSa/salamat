@@ -15,6 +15,21 @@
 </section>
 
 
+<section class="order-steps-sec def-sec-bottom">
+	<div class="order-steps container">
+		<div class="order-steps__back">
+			<a href="#"><i class="i-arrow-left"></i>Продолжить покупки</a>
+		</div>
+		<div class="order-steps__click">
+			<a href="#modal-one-click" class="btn btn--rever fancy" title="Купить в 1 клик">В 1 клик <i class="i-right"></i></a>
+		</div>
+		<div class="order-steps__next">
+			<a href="#" class="btn">Все верно, перейти к оформлению<i class="i-right"></i></a>
+		</div>
+	</div>
+</section>
+
+
 <section class="user-basket-sec def-sec-bottom">
 	<div class="user-basket container">
 		<div class="user-basket__list">
@@ -117,10 +132,8 @@
 
 		<div class="user-basket__total">
 			<div class="user-basket__promo">
-				<form class="ajax-form">
-					<input type="text" class="input-text" placeholder="Введите промокод" data-req="true">
-					<button class="btn">Получить скидку<i class="i-right"></i></button>
-				</form>
+				<input type="text" class="input-text" placeholder="Введите промокод" data-req="true">
+				<a class="btn">Получить скидку<i class="i-right"></i></a>
 			</div>
 			<div class="user-basket__summ">
 				<div class="user-orders__item-summ">
@@ -131,10 +144,6 @@
 					<div class="user-orders__item-summ-row">
 						<span>Товаров на сумму:</span>
 						<span>9 000 руб.</span>
-					</div>
-					<div class="user-orders__item-summ-row">
-						<span>Доставка:</span>
-						<span>1 000 руб.</span>
 					</div>
 				</div>
 			</div>
@@ -171,7 +180,7 @@
 			<a href="#"><i class="i-arrow-left"></i>Продолжить покупки</a>
 		</div>
 		<div class="order-steps__click">
-			<a href="#" class="btn btn--rever" title="Купить в 1 клик">В 1 клик <i class="i-right"></i></a>
+			<a href="#modal-one-click" class="btn btn--rever fancy" title="Купить в 1 клик">В 1 клик <i class="i-right"></i></a>
 		</div>
 		<div class="order-steps__next">
 			<a href="#" class="btn">Все верно, перейти к оформлению<i class="i-right"></i></a>

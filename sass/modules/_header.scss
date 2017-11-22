@@ -310,6 +310,15 @@
 	display: flex;
 	align-items: center;
 	margin-right: 5%;
+	&--mobile {
+		margin-right: 0;
+		padding-top: 5px;
+		padding-bottom: $pad-xxs;
+		font-size: 14px;
+		.header__geo-city {
+			margin-right: $pad-xs;
+		}
+	}
 }
 
 .header__geo-city {

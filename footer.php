@@ -98,6 +98,11 @@
 	</div>
 </footer>
 
+
+<a href="#site-head" class="to-top-btn scrollto">
+	<span>Наверх</span>
+</a>
+
 <!-- Модальные окна -->
 <div class="modals-sec">
 
@@ -108,10 +113,60 @@
 			<input type="text" class="input-text" name="user_name" placeholder="Введите имя" data-label="Имя пользователя">
 			<input type="tel" class="input-text" name="user_tel" data-label="Телефон" placeholder="Введите телефон*" data-req="true">
 			<input type="hidden" value="Новая заявка" name="form_subject">
+			<label class="style-checkbox">
+				<input type="checkbox" checked name="personal-info-agree" data-req="true">
+				<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.</span>
+			</label>
 			<div class="btn-center">
 				<button type="submit" class="btn">Отправить</button>
 			</div>
 		</form>
+	</div>
+
+	<div id="modal-specialist" class="modal modal--form">
+		<h4>Заказать консультацию специалиста</h4>
+		<p class="modal-descr">Оставьте заявку и наш администратор свяжется с&nbsp;Вами в течение 10 минут</p>
+		<form class="ajax-form">
+			<input type="text" class="input-text" name="user_name" placeholder="Введите имя" data-label="Имя пользователя">
+			<input type="tel" class="input-text" name="user_tel" data-label="Телефон" placeholder="Введите телефон*" data-req="true">
+			<input type="hidden" value="Новая заявка" name="form_subject">
+			<label class="style-checkbox">
+				<input type="checkbox" checked name="personal-info-agree" data-req="true">
+				<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.</span>
+			</label>
+			<div class="btn-center">
+				<button type="submit" class="btn">Отправить</button>
+			</div>
+		</form>
+	</div>
+
+	<div id="modal-one-click" class="modal modal--form">
+		<h4>Покупка в 1 клик</h4>
+		<p class="modal-descr">Оставьте заявку и наш администратор свяжется с&nbsp;Вами в течение 10 минут</p>
+		<form class="ajax-form">
+			<input type="text" class="input-text" name="user_name" placeholder="Введите имя" data-label="Имя пользователя">
+			<input type="tel" class="input-text" name="user_tel" data-label="Телефон" placeholder="Введите телефон*" data-req="true">
+			<input type="hidden" value="Новая заявка" name="form_subject">
+			<label class="style-checkbox">
+				<input type="checkbox" checked name="personal-info-agree" data-req="true">
+				<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.</span>
+			</label>
+			<div class="btn-center">
+				<button type="submit" class="btn">Отправить</button>
+			</div>
+		</form>
+	</div>
+
+	<div id="city-list" class="modal modal--city-list">
+		<h4>Выберите ваш город</h4>
+		<ul>
+			<li><a href="#">Казань</a></li>
+			<li><a href="#">Альметьевск</a></li>
+			<li><a href="#">Набережные Челны</a></li>
+			<li><a href="#">Москва</a></li>
+			<li><a href="#">Новосибирск</a></li>
+			<li><a href="#">Алматы</a></li>
+		</ul>
 	</div>
 
 	<div id="modal-thanks" class="modal">

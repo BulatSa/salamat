@@ -172,10 +172,11 @@ $('#big-slider').slick({
 	adaptiveHeight: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	//autoplay: true,
+	autoplay: true,
 	infinite: false,
-	nextArrow: '.big-slider-nav .i-nav-right',
-	prevArrow: '.big-slider-nav .i-nav-left',
+	arrows: false,
+	//nextArrow: '.big-slider-nav .i-nav-right',
+	//prevArrow: '.big-slider-nav .i-nav-left',
 	dots: true,
 	dotsClass: 'big-slider-dots'
 });
@@ -653,6 +654,15 @@ function init_fancy() {
 		transitionEffect : "slide",
 		autoFocus : false,
 		backFocus : false,
+		buttons : [
+			'slideShow',
+			'fullScreen',
+			'thumbs',
+			//'share',
+			//'download',
+			//'zoom',
+			'close'
+		],
 		animationDuration : 400
 	});
 	$('.fancy-map').fancybox({
@@ -719,6 +729,26 @@ $(document).ready(function(){
 });
 /***********************
  Прокрутка к секциям END
+ ***********************/
+
+
+/***********************
+ To top btn BEGIN
+ ***********************/
+$(document).ready(function() {
+	$(window).on('scroll',function () {
+		var scrolltop = $(this).scrollTop();
+		var to_top_btn = $('.to-top-btn');
+
+		if (scrolltop > 200){
+			to_top_btn.addClass('visible');
+		} else {
+			to_top_btn.removeClass('visible');
+		}
+	})
+});
+/***********************
+ To top btn END
  ***********************/
 
 

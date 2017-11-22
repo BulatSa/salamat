@@ -18,8 +18,8 @@
 
 <section class="cabinet-nav-sec">
 	<div class="cabinet-nav container">
-		<a href="#" class="cabinet-nav__link active">Профиль</a>
-		<a href="#" class="cabinet-nav__link">Заказы</a>
+		<a href="#" class="cabinet-nav__link">Профиль</a>
+		<a href="#" class="cabinet-nav__link active">Заказы</a>
 		<a href="#" class="cabinet-nav__link">Выход</a>
 	</div>
 </section>
@@ -86,9 +86,6 @@
 						<div class="user-orders__item-control-row">
 							<a href="#" class="btn">Повторить заказ<i class="i-right"></i></a>
 							<a href="#" class="btn">Оплатить<i class="i-right"></i></a>
-						</div>
-						<div class="user-orders__item-control-row">
-							<a href="#" class="control-link">Отменить заказ</a>
 						</div>
 					</div>
 				</div>
@@ -216,10 +213,6 @@
 					<div class="user-orders__item-control">
 						<div class="user-orders__item-control-row">
 							<a href="#" class="btn">Повторить заказ<i class="i-right"></i></a>
-							<a href="#" class="btn">Оплатить<i class="i-right"></i></a>
-						</div>
-						<div class="user-orders__item-control-row">
-							<a href="#" class="control-link">Отменить заказ</a>
 						</div>
 					</div>
 				</div>

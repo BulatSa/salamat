@@ -1,12 +1,12 @@
 ﻿<?php include('header.php'); ?>
 
 <section class="big-slider-sec">
-	<div class="big-slider-nav-wrap container">
+	<!--<div class="big-slider-nav-wrap container">
 		<div class="big-slider-nav">
 			<i class="i-nav-left"></i>
 			<i class="i-nav-right"></i>
 		</div>
-	</div>
+	</div>-->
 	<div class="big-slider" id="big-slider">
 		<div class="big-slide" style="background-image: url('../img/big-slide-1.jpg')">
 			<div class="container">
@@ -447,10 +447,6 @@
 	<div class="container">
 		<div class="offers-row-title">
 			<a href="#" class="h1">Специальные предложения</a>
-<!--			<div id="offers-special-nav" class="offers-nav">-->
-<!--				<i class="i-nav-left"></i>-->
-<!--				<i class="i-nav-right"></i>-->
-<!--			</div>-->
 		</div>
 		<div class="offers-row row salamat-slider">
 			<div class="grid-3 grid-4_m">
@@ -772,7 +768,7 @@
 							<p>постоянных клиентов</p>
 						</div>
 					</div>
-					<a href="#" class="btn">Получить консультацию специалиста <i class="i-right"></i></a>
+					<a href="#modal-specialist" class="btn fancy">Получить консультацию специалиста <i class="i-right"></i></a>
 				</div>
 			</div>
 

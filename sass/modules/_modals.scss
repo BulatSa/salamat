@@ -17,6 +17,26 @@
 			width: 100%;
 		}
 	}
+	&--city-list {
+		width: 380px;
+		border-radius: 10px;
+		h4 {
+			text-align: center;
+		}
+		ul {
+			list-style: none;
+		}
+		a {
+			display: inline-block;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			color: $orange;
+			transition: all 0.3s ease;
+			&:hover {
+				color: $green;
+			}
+		}
+	}
 }
 
 .modal-descr {
@@ -48,7 +68,8 @@
 		height: 28px;
 	}
 	&:before, &:after {
-		width: 18px;
+		//width: 18px;
+		//height: 18px;
 		margin-left: -9px;
 	}
 }

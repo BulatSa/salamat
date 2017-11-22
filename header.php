@@ -27,7 +27,7 @@
 
 <body>
 
-<section class="header-sec">
+<section class="header-sec" id="site-head">
 	<div class="header">
 		<div class="header-mobile-wrap">
 			<div class="header-mobile container">
@@ -52,11 +52,16 @@
 					<a href="#"><i class="i-user"></i>Вход</a>
 					<a href="#">Регистрация</a>
 				</div>
+
 				<div class="header-mobile__menu-search">
 					<form name="search" class="header__search header__search--mobile">
 						<input type="search" class="input-search" placeholder="Поиск по каталогу">
 						<button><i class="i-search"></i></button>
 					</form>
+				</div>
+				<div class="header__geo header__geo--mobile">
+					<span class="header__geo-city"><span>Ваш город: </span><a href="#city-list" class='fancy'>Казань</a></span>
+					<a href="#" class="header__geo-adress"><i class="i-geo"></i><span>Адреса салонов</span></a>
 				</div>
 				<ul class="header-mobile__catalog">
 					<li>
@@ -204,7 +209,7 @@
 		<div class="header-top-wrap">
 			<div class="header-top container">
 				<div class="header__geo">
-					<span class="header__geo-city"><span>Ваш город: </span><a href="#">Казань</a></span>
+					<span class="header__geo-city"><span>Ваш город: </span><a href="#city-list" class='fancy'>Казань</a></span>
 					<a href="#" class="header__geo-adress"><i class="i-geo"></i><span>Адреса салонов</span></a>
 				</div>
 				<ul class="header__nav">

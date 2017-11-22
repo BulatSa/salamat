@@ -18,13 +18,13 @@
 				<p class="product-info__name h2 product-info__name--mobile">Ортез для позвоночника  BAUERFEIND SecuTec Lumbo</p>
 				<div class="product-info__slider">
 					<div class="salamat-slider">
-						<a href="img/offer-item-big.jpg" class="product-info__slide salamat-slide fancy">
+						<a href="img/offer-item-big.jpg" class="product-info__slide salamat-slide fancy" data-fancybox="product">
 							<img src="img/offer-item-big.jpg" alt="">
 						</a>
-						<a href="img/offer-item-big.jpg" class="product-info__slide salamat-slide fancy">
+						<a href="img/offer-item-big.jpg" class="product-info__slide salamat-slide fancy" data-fancybox="product">
 							<img src="img/offer-item-big.jpg" alt="">
 						</a>
-						<a href="img/offer-item-big.jpg" class="product-info__slide salamat-slide fancy">
+						<a href="img/offer-item-big.jpg" class="product-info__slide salamat-slide fancy" data-fancybox="product">
 							<img src="img/offer-item-big.jpg" alt="">
 						</a>
 					</div>
@@ -139,7 +139,7 @@
 					</div>
 					<div class="product-info__btns">
 						<a href="#" class="btn">В корзину<i class="i-right"></i></a>
-						<a href="#" class="btn btn--rever">В 1 клик<i class="i-right"></i></a>
+						<a href="#modal-one-click" class="btn btn--rever fancy">В 1 клик<i class="i-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -183,7 +183,7 @@
 										<li>консультационно–диагностическая зона с обязательным кабинетом врача, не имеет аналогов в России.</li>
 									</ul>
 								</div>
-								<a href="#" class="btn fancy">Получить консультацию<i class="i-right"></i></a>
+								<a href="#modal-specialist" class="btn fancy">Получить консультацию<i class="i-right"></i></a>
 							</div>
 							<div class="product-tabs__cons-pers">
 								<div class="product-tabs__cons-pers-img">

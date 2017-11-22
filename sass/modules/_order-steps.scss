@@ -5,6 +5,9 @@
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	@include res(xs) {
+		flex-direction: column;
+	}
 }
 
 .order-steps__back {
@@ -17,6 +20,10 @@
 	@include res(m) {
 		width: 100%;
 		margin-bottom: $pad-xxs;
+	}
+	@include res(xs) {
+		margin-left: 0;
+		margin-right: 0;
 	}
 	&:hover {
 		a {
@@ -36,8 +43,16 @@
 
 .order-steps__click {
 	margin: $pad-xxs 15px $pad-xxs;
+	@include res(xs) {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 .order-steps__next {
 	margin: $pad-xxs 15px $pad-xxs;
+	@include res(xs) {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
