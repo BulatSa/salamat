@@ -36,6 +36,9 @@
 	span {
 		display: inline-block;
 		margin-right: 20px;
+		@include res(l) {
+			margin-right: 10px;
+		}
 		@include res(m) {
 			display: block;
 			margin-bottom: $pad-xxs;
@@ -48,7 +51,7 @@
 		color: transparentize(#233647, 0.5);
 		transition: all 0.3s ease;
 		@include res(l) {
-			padding: 6px 18px 7px;
+			padding: 6px 16px 7px;
 		}
 		&:hover {
 			color: $green;
@@ -70,6 +73,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	font-size: 16px;
+	white-space: nowrap;
 	@include res(l) {
 		padding-bottom: 7px;
 		font-size: 14px;
@@ -97,6 +101,9 @@
 .catalog-head__compare {
 	margin-right: $pad-s;
 	color: #5f6c77;
+	@include res(l) {
+		margin-right: $pad-xs;
+	}
 	@include res(m) {
 		display: inline-block;
 		margin-right: 0;
@@ -126,6 +133,9 @@
 		padding: 0 5px;
 		color: transparentize(#5f6c77, 0.5);
 		transition: all 0.3s ease;
+		@include res(l) {
+			padding: 0 3px;
+		}
 		&:hover {
 			color: #5f6c77;
 		}
@@ -137,6 +147,9 @@
 
 .catalog-head__position {
 	padding-left: 10px;
+	@include res(xxs) {
+		display: none;
+	}
 	a {
 		margin-left: 10px;
 		transition: all 0.3s ease;

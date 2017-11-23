@@ -486,19 +486,60 @@ Catalog Faq END
 Filter Catalog BEGIN
 ***********************/
 $(document).ready(function(){
-	if ($(window).width() < 680) {
-		$('.catalog-list__filter-sets').slideUp();
+	//function catalogFilterSlide() {
+		$('.catalog-list__filter-sets-wrap').slideUp(0);
 		$('.catalog-list__filter-title').on('click', function () {
-			$('.catalog-list__filter-title').not($(this)).removeClass('active');
+			//$('.catalog-list__filter-title').not($(this)).parent('.catalog-list__filter-block').removeClass('active');
 
-			$(this).next('.catalog-list__filter-sets').slideToggle();
-			$(this).toggleClass('active');
+			$(this).siblings('.catalog-list__filter-sets-wrap').slideToggle();
+			if ($(this).closest('.catalog-list__filter-block').hasClass('changed')) {
+				$(this).siblings('.catalog-list__filter-block-counter').slideToggle();
+			}
+
+			$(this).parent().toggleClass('active');
 		});
-	}
 
+		$('.catalog-list__filter-sets input').on('change', function(){
+			$(this).closest('.catalog-list__filter-block').addClass('changed');
+		});
+	//}
+
+	// $(window).resize(function () {
+	// 	catalogFilterSlide();
+	// })
 });
 /***********************
 Filter Catalog END
+***********************/
+
+
+/***********************
+Catalog Items Position BEGIN
+***********************/
+$(document).ready(function(){
+	var $catalogList = $('.catalog-list__items');
+	var $productItem = $('.product-item');
+	$('.catalog-head__position a').on('click', function(){
+		var thisPosition = $(this).data('position');
+		$(this).siblings().removeClass('active');
+		$(this).addClass('active');
+
+		if (thisPosition == 'row') {
+			$catalogList.addClass('catalog-list__items--rowed');
+			$productItem.parent().attr('class', 'grid-12');
+		} else {
+			$catalogList.removeClass('catalog-list__items--rowed');
+			$productItem.parent().attr('class', 'grid-4 grid-6_m grid-12_xs');
+		}
+	});
+	$(window).resize(function(){
+		if ($(window).width() < 375) {
+			$catalogList.removeClass('catalog-list__items--rowed');
+		}
+	});
+});
+/***********************
+Catalof Items Position END
 ***********************/
 
 

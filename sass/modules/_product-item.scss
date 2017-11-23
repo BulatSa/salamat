@@ -19,9 +19,6 @@
 		box-shadow: 0 4px 20px 0 transparentize($orange, 0.65);
 		border: 1px solid #FFF;
 
-		.product-item__title{
-			color: $orange;
-		}
 	}
 }
 
@@ -69,6 +66,11 @@
 
 .product-item__link {
 	display: block;
+	&:hover {
+		.product-item__title{
+			color: $orange;
+		}
+	}
 }
 
 .product-item__img {
@@ -201,6 +203,9 @@
 	}
 	@include res(l) {
 		font-size: 20px;
+	}
+	@include res(s) {
+		font-size: 18px;
 	}
 	.old {
 		position: absolute;

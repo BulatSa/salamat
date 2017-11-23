@@ -7,11 +7,17 @@
 	padding: $pad-xs $pad-xs;
 	border-radius: 10px;
 	box-shadow: 0 5px 30px 0 rgba(210, 229, 236, 0.45);
+	@include res(l) {
+		padding: 16px 16px;
+	}
 	.style-checkbox {
 		margin-bottom: 0px;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		font-size: 14px;
+		@include res(l) {
+			font-size: 13px;
+		}
 		&:hover {
 			.checkbox-personal {
 				color: $green;
@@ -19,38 +25,89 @@
 		}
 	}
 	.checkbox-personal {
+		display: block;
 		transition: all 0.3s ease;
 	}
 }
 
 .catalog-list__filter-block {
-	padding-bottom: $pad-s;
+	padding-bottom: $pad-xxs;
+	transition: all 0.3s ease;
 	@include res(s) {
+		padding-bottom: $pad-xxs;
+	}
+	&.active {
 		padding-bottom: $pad-xs;
+		@include res(s) {
+			padding-bottom: $pad-xxs;
+		}
+		.catalog-list__filter-title {
+			&:after {
+				transform: translate3d(0,5px,0) rotate(-135deg);
+			}
+		}
+		.catalog-list__filter-sets {
+			display: block;
+		}
+	}
+	&.changed {
+		.catalog-list__filter-block-counter {
+			display: block;
+		}
 	}
 }
 
 .catalog-list__filter-title {
 	position: relative;
 	padding-right: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	&:hover {
+		color: $orange;
+	}
 	&:after {
-		@include res(s) {
-			content: '';
-			position: absolute;
-			top: 1px;
-			right: 5px;
-			width: 10px;
-			height: 10px;
-			border-bottom: 2px solid #dedede;
-			border-right: 2px solid #dedede;
-			transform: translate3d(0,0,0) rotate(45deg);
-			transition: all 0.3s ease;
+		content: '';
+		position: absolute;
+		top: 1px;
+		right: 5px;
+		width: 10px;
+		height: 10px;
+		border-bottom: 2px solid #dedede;
+		border-right: 2px solid #dedede;
+		transform: translate3d(0,0,0) rotate(45deg);
+		transition: all 0.3s ease;
+	}
+}
+
+.catalog-list__filter-block-counter {
+	display: none;
+	margin-bottom: $pad-xxs;
+	padding: $pad-xxs $pad-xxs;
+	font-size: 14px;
+	border-radius: 10px;
+	border: 1px solid #e2e2e2;
+	@include res(l) {
+		font-size: 13px;
+	}
+	a {
+		display: inline-block;
+		padding-top: 2px;
+		color: $orange;
+		border-bottom: 1px dotted $orange;
+		transition: all 0.3s ease;
+		&:hover {
+			border-color: transparent;
 		}
 	}
-	&.active {
-		color: $orange;
-		&:after {
-			transform: translate3d(0,5px,0) rotate(-135deg);
+}
+
+.catalog-list__filter-sets {
+	.style-checkbox {
+		input:disabled + span {
+			opacity: 0.5;
+		}
+		&.disabled {
+			pointer-events: none;
 		}
 	}
 }
@@ -216,6 +273,95 @@
 			margin-bottom: $pad-xs;
 		}
 	 }
+	.product-item__buy {
+		flex-wrap: wrap;
+		@include res(l) {
+			padding-top: $pad-xxs;
+		}
+	}
+	.product-item__buy-price {
+		@include res(l) {
+			width: 100%;
+			padding-bottom: $pad-xxs;
+		}
+		@include res(s) {
+			width: initial;
+		}
+	}
+	&--rowed {
+		.product-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-bottom: $pad-xs;
+			padding-right: $pad-s;
+			@include res(m) {
+				padding-right: $pad-xs;
+			}
+			@include res(s) {
+				padding-right: $pad-xxs;
+			}
+		}
+		.product-item__link {
+			display: flex;
+			align-items: flex-start;
+			width: 80%;
+			@include res(s) {
+				width: 75%;
+			}
+		}
+		.product-item__img {
+			max-width: 250px;
+			width: 20%;
+			@include res(l) {
+				width: 25%;
+			}
+			@include res(m) {
+				width: 30%;
+			}
+			@include res(s) {
+				width: 35%;
+			}
+		}
+		.product-item__info {
+			display: block;
+			width: 80%;
+			padding-left: $pad-xxs;
+			padding-right: $pad-xxs;
+			@include res(l) {
+				width: 75%;
+			}
+			@include res(m) {
+				width: 70%;
+			}
+			@include res(s) {
+				width: 65%;
+			}
+		}
+		.product-item__status {
+			padding-top: $pad-xs;
+			text-align: left;
+			@include res(l) {
+				padding-top: $pad-xxs;
+			}
+		}
+		.product-item__buy {
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			width: 20%;
+			border: none;
+			@include res(s) {
+				width: 25%;
+			}
+		}
+		.product-item__buy-price {
+			width: 100%;
+			text-align: right;
+		}
+		.product-item__buy-btns {
+			margin-top: $pad-xs;
+		}
+	}
 }
 
 .catalog-list__item {

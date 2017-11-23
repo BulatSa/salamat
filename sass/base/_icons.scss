@@ -30,6 +30,9 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.i-settings:before {
+	content: "\e91c";
+}
 .i-shield:before {
 	content: "\e91a";
 }
