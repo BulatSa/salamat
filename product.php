@@ -21,8 +21,8 @@
 						<a href="img/offer-item-big.jpg" class="product-info__slide salamat-slide fancy" data-fancybox="product">
 							<img src="img/offer-item-big.jpg" alt="">
 						</a>
-						<a href="img/offer-item-big.jpg" class="product-info__slide salamat-slide fancy" data-fancybox="product">
-							<img src="img/offer-item-big.jpg" alt="">
+						<a href="img/offer-item-big-2.jpg" class="product-info__slide salamat-slide fancy" data-fancybox="product">
+							<img src="img/offer-item-big-2.jpg" alt="">
 						</a>
 						<a href="img/offer-item-big.jpg" class="product-info__slide salamat-slide fancy" data-fancybox="product">
 							<img src="img/offer-item-big.jpg" alt="">
@@ -126,7 +126,7 @@
 					<div class="product-info__benefits">
 						<div class="product-info__benefit">
 							<span class="product-info__benefit-icon"><i class="i-geo"></i></span>
-							Самовывоз сегодня: <a href="#">в 3 салонах</a>
+							Самовывоз сегодня: <a href="#product-info" class="product-info__benefit-delivery scrollto">в 3 салонах</a>
 						</div>
 						<div class="product-info__benefit">
 							<span class="product-info__benefit-icon"><i class="i-truck"></i></span>
@@ -148,7 +148,7 @@
 </section>
 
 
-<section class="product-tabs-sec def-sec-bottom">
+<section class="product-tabs-sec def-sec-bottom"  id="product-info">
 	<div class="product-tabs container">
 		<div class="product-tabs__nav">
 			<a href="#" class="active">Характеристики</a>

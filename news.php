@@ -91,7 +91,7 @@
 				<button class="btn">Подписаться на рассылку<i class="i-right"></i></button>
 				<label class="style-checkbox">
 					<input type="checkbox" checked name="personal-info-agree">
-					<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.</span>
+					<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a href="/politic.php" target="_blank">политики конфиденциальности</a>.</span>
 				</label>
 			</form>
 		</div>

@@ -44,6 +44,7 @@
 	margin-bottom: $pad-xs;
 	padding: $pad-xs $pad-xs;
 	box-shadow: 0 5px 15px transparentize(#000, 0.9);
+	cursor: pointer;
 	background: #fff;
 	transition: all 0.3s ease;
 	@include res(s) {
@@ -65,7 +66,6 @@
 	padding-bottom: 0;
 	padding-right: 22px;
 	color: #5f6c77;
-	cursor: pointer;
 	&:after {
 		content: '';
 		position: absolute;

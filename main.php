@@ -217,7 +217,7 @@
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
-							<a href="#" class="btn product-item__basket" title="В корзину"><i class="i-basket"></i></a>
+							<a href="#" class="btn product-item__basket" title="Выбрать варианты"><i class="i-settings"></i></a>
 						</div>
 					</div>
 				</div>
@@ -279,7 +279,7 @@
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
-							<a href="#" class="btn product-item__basket" title="В корзину"><i class="i-basket"></i></a>
+							<a href="#" class="btn product-item__basket" title="Выбрать варианты"><i class="i-settings"></i></a>
 						</div>
 					</div>
 				</div>
@@ -480,7 +480,7 @@
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
-							<a href="#" class="btn product-item__basket" title="В корзину"><i class="i-basket"></i></a>
+							<a href="#" class="btn product-item__basket" title="Выбрать варианты" tabindex="0"><i class="i-settings"></i></a>
 						</div>
 					</div>
 				</div>
@@ -516,7 +516,7 @@
 						</div>
 						<div class="product-item__buy-btns">
 							<a href="#" class="compare">Сравнить</a>
-							<a href="#" class="btn product-item__basket" title="В корзину"><i class="i-basket"></i></a>
+							<a href="#" class="btn product-item__basket" title="Выбрать варианты"><i class="i-settings"></i></a>
 						</div>
 					</div>
 				</div>

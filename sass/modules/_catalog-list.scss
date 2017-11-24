@@ -41,6 +41,9 @@
 		@include res(s) {
 			padding-bottom: $pad-xxs;
 		}
+		.catalog-list__filter-sets-wrap {
+			display: block;
+		}
 		.catalog-list__filter-title {
 			&:after {
 				transform: translate3d(0,5px,0) rotate(-135deg);
@@ -64,6 +67,9 @@
 	transition: all 0.3s ease;
 	&:hover {
 		color: $orange;
+		&:after {
+			border-color: $orange;
+		}
 	}
 	&:after {
 		content: '';
@@ -80,7 +86,7 @@
 }
 
 .catalog-list__filter-block-counter {
-	display: none;
+	display: block;
 	margin-bottom: $pad-xxs;
 	padding: $pad-xxs $pad-xxs;
 	font-size: 14px;
@@ -99,6 +105,10 @@
 			border-color: transparent;
 		}
 	}
+}
+
+.catalog-list__filter-sets-wrap {
+	display: none;
 }
 
 .catalog-list__filter-sets {

@@ -216,7 +216,7 @@
 
 				<label class="style-checkbox">
 					<input type="checkbox" checked name="personal-info-agree" data-req="true">
-					<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.</span>
+					<span class="checkbox-personal">Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a href="/politic.php" target="_blank">политики конфиденциальности</a>.</span>
 				</label>
 
 				<div class="inputfile-wrap">

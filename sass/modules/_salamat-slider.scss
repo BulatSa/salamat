@@ -7,42 +7,62 @@
 	}
 	.slick-arrow {
 		position: absolute;
-		top: 50%;
-		width: 32px;
-		height: 32px;
-		border-bottom: 1px solid #1e1e1e;
-		border-right: 1px solid #1e1e1e;
-		border-radius: 0 0 2px 0;
+		top: 0;
+		width: 46px;
+		height: 100%;
 		background: transparent;
 		outline: none;
 		cursor: pointer;
 		opacity: 0.7;
 		transition: all 0.3s ease;
 		z-index: 1;
-		@include res(l) {
-			width: 28px;
-			height: 28px;
-		}
 		@include res(m) {
-			width: 22px;
-			height: 22px;
+			width: 36px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			width: 32px;
+			height: 32px;
+			border-bottom: 1px solid #1e1e1e;
+			border-right: 1px solid #1e1e1e;
+			border-radius: 0 0 2px 0;
+			transition: all 0.3s ease;
+			@include res(l) {
+				width: 28px;
+				height: 28px;
+			}
+			@include res(m) {
+				width: 22px;
+				height: 22px;
+			}
 		}
 		&:hover {
 			opacity: 1;
+			&:after {
+				border-color: $green;
+			}
 		}
 	}
 	.slick-prev {
-		left: 7px;
-		transform: translateY(-50%) rotate(135deg);
+		left: 0px;
 		@include res(l) {
-			left: 10px;
+			left: 0px;
+		}
+		&:after {
+			left: 12px;
+			transform: translateY(-50%) rotate(135deg);
 		}
 	}
 	.slick-next {
-		right: 7px;
-		transform: translateY(-50%) rotate(-45deg);
+		right: 0px;
 		@include res(l) {
-			right: 10px;
+			right: 0px;
+		}
+		&:after {
+			right: 12px;
+			transform: translateY(-50%) rotate(-45deg);
 		}
 	}
 	.slick-disabled {
@@ -96,5 +116,6 @@
 	padding-right: $pad-xxs;
 	img {
 		display: block;
+		margin: 0 auto;
 	}
 }

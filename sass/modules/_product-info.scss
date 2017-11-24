@@ -18,24 +18,22 @@
 		margin-bottom: $pad-xs;
 	}
 	.salamat-slider {
+		padding-left: 0;
+		padding-right: 0;
 		border: 1px solid #e2e2e2;
 		border-radius: 10px;
 		.slick-arrow {
-			width: 28px;
-			height: 28px;
+			//width: 28px;
+			//height: 28px;
 		}
 		.slick-prev {
-			left: 15px;
-			transform: translateY(-50%) rotate(135deg);
-			@include res(l) {
-				left: 15px;
+			&:after {
+				left: 20px;
 			}
 		}
 		.slick-next {
-			right: 15px;
-			transform: translateY(-50%) rotate(-45deg);
-			@include res(l) {
-				right: 15px;
+			&:after {
+				right: 20px;
 			}
 		}
 	}
@@ -43,6 +41,8 @@
 }
 
 .product-info__slide {
+	padding-left: 0;
+	padding-right: 0;
 	color: #000;
 	cursor: url('../img/icons/zoom-in.svg'), pointer;
 	img {

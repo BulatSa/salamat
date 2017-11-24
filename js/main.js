@@ -411,6 +411,10 @@ $(document).ready(function() {
 	}
 
 	select_prod_tab(0);
+
+	$('.product-info__benefit-delivery').on('click', function(){
+		select_prod_tab(3);
+	});
 });
 /*******************
  Product-tabs END
@@ -469,12 +473,14 @@ Catalog Faq BEGIN
 $(document).ready(function(){
 	$('.catalog-faq__question .user-content').slideUp();
 
-	$('.catalog-faq__question-title').on('click', function(){
 
-		$('.catalog-faq__question-title').not($(this)).next('.user-content').slideUp();
-		$('.catalog-faq__question-title').not($(this)).removeClass('active');
-		$(this).next('.user-content').slideToggle();
-		$(this).toggleClass('active');
+
+	$('.catalog-faq__question').on('click', function(){
+
+		$('.catalog-faq__question').not($(this)).find('.user-content').slideUp();
+		$('.catalog-faq__question').not($(this)).find('.catalog-faq__question-title').removeClass('active');
+		$(this).find('.user-content').slideToggle();
+		$(this).find('.catalog-faq__question-title').toggleClass('active');
 	});
 });
 /***********************
@@ -486,27 +492,15 @@ Catalog Faq END
 Filter Catalog BEGIN
 ***********************/
 $(document).ready(function(){
-	//function catalogFilterSlide() {
-		$('.catalog-list__filter-sets-wrap').slideUp(0);
-		$('.catalog-list__filter-title').on('click', function () {
-			//$('.catalog-list__filter-title').not($(this)).parent('.catalog-list__filter-block').removeClass('active');
-
-			$(this).siblings('.catalog-list__filter-sets-wrap').slideToggle();
-			if ($(this).closest('.catalog-list__filter-block').hasClass('changed')) {
-				$(this).siblings('.catalog-list__filter-block-counter').slideToggle();
-			}
-
+	$('.catalog-list__filter-title').on('click', function () {
+		$(this).siblings('.catalog-list__filter-sets-wrap').slideToggle('300', function(){
 			$(this).parent().toggleClass('active');
 		});
+	});
 
-		$('.catalog-list__filter-sets input').on('change', function(){
-			$(this).closest('.catalog-list__filter-block').addClass('changed');
-		});
-	//}
-
-	// $(window).resize(function () {
-	// 	catalogFilterSlide();
-	// })
+	// $('.catalog-list__filter-sets input').on('change', function(){
+	// 	$(this).closest('.catalog-list__filter-block').addClass('changed');
+	// });
 });
 /***********************
 Filter Catalog END
@@ -519,7 +513,8 @@ Catalog Items Position BEGIN
 $(document).ready(function(){
 	var $catalogList = $('.catalog-list__items');
 	var $productItem = $('.product-item');
-	$('.catalog-head__position a').on('click', function(){
+	$('.catalog-head__position a').on('click', function(e){
+		e.preventDefault();
 		var thisPosition = $(this).data('position');
 		$(this).siblings().removeClass('active');
 		$(this).addClass('active');
@@ -533,8 +528,12 @@ $(document).ready(function(){
 		}
 	});
 	$(window).resize(function(){
-		if ($(window).width() < 375) {
+		if ($(window).width() < 380) {
 			$catalogList.removeClass('catalog-list__items--rowed');
+		} else {
+			if($('.catalog-head__position a.active[data-position=row]').length) {
+				$catalogList.addClass('catalog-list__items--rowed');
+			}
 		}
 	});
 });

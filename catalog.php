@@ -52,7 +52,7 @@
 		<div class="row">
 			<div class="grid-3 grid-4_m grid-12_s">
 				<form class="catalog-list__filter">
-					<div class="catalog-list__filter-block">
+					<div class="catalog-list__filter-block active">
 						<h5 class="catalog-list__filter-title">Сезон</h5>
 						<div class="catalog-list__filter-sets-wrap">
 							<div class="catalog-list__filter-block-counter">
@@ -637,7 +637,7 @@
 					<p class="">Полезная информация</p>
 				</div>
 				<div class="catalog-faq__info user-content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
 				</div>
 				<div class="catalog-faq__title h3">
 					<img src="img/icons/catalog-info-quest.svg" alt="">
@@ -646,7 +646,10 @@
 				<div class="catalog-faq__questions">
 					<div class="catalog-faq__question">
 						<p class="catalog-faq__question-title h5">Рекомендации и советы по выбору</p>
-						<div class="user-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta nemo perferendis quaerat quos reprehenderit repudiandae. Ab aliquam dolorum ipsum. Aut consectetur ex, excepturi nisi provident rem repellat tempore voluptate!</div>
+						<div class="user-content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta nemo perferendis quaerat quos reprehenderit repudiandae. Ab aliquam dolorum ipsum. Aut consectetur ex, excepturi nisi provident rem repellat tempore voluptate!</p>
+							<a href="#" target="_blank">Proin sodales pulvinar tempor.</a>
+						</div>
 					</div>
 					<div class="catalog-faq__question">
 						<p class="catalog-faq__question-title h5">Рекомендации и советы по выбору</p>

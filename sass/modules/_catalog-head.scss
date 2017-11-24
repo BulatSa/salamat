@@ -101,6 +101,7 @@
 .catalog-head__compare {
 	margin-right: $pad-s;
 	color: #5f6c77;
+	transition: all 0.3s ease;
 	@include res(l) {
 		margin-right: $pad-xs;
 	}
@@ -108,6 +109,9 @@
 		display: inline-block;
 		margin-right: 0;
 		margin-bottom: $pad-xxs;
+	}
+	&:hover {
+		color: $green;
 	}
 	span {
 		color: $orange;
